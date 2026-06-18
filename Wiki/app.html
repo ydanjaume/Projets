@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wiki YDA</title>
+<style>
+  :root {
+    --bg:        #1a1b1e;
+    --bg2:       #25262b;
+    --bg3:       #2c2e33;
+    --border:    #373a40;
+    --text:      #c1c2c5;
+    --text-dim:  #6b7280;
+    --accent:    #7c6af7;
+    --accent2:   #a78bfa;
+    --link:      #818cf8;
+    --green:     #4ade80;
+    --orange:    #fb923c;
+    --code-bg:   #1e1e2e;
+    --sidebar-w: 260px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 15px; line-height: 1.6; display: flex; height: 100vh; overflow: hidden; }
+
+  /* ── Sidebar ── */
+  #sidebar {
+    width: var(--sidebar-w); min-width: var(--sidebar-w);
+    background: var(--bg2); border-right: 1px solid var(--border);
+    display: flex; flex-direction: column; overflow: hidden;
+  }
+  #sidebar-header {
+    padding: 16px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 8px;
+  }
+  #sidebar-header span { font-weight: 700; font-size: 14px; letter-spacing: .04em; color: var(--accent2); }
+  #search {
+    margin: 10px 10px 6px; padding: 6px 10px; background: var(--bg3);
+    border: 1px solid var(--border); border-radius: 6px; color: var(--text);
+    font-size: 13px; outline: none; width: calc(100% - 20px);
+  }
+  #search:focus { border-color: var(--accent); }
+  #tree { overflow-y: auto; flex: 1; padding: 4px 0 16px; }
+  .folder { padding: 6px 12px 2px; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--text-dim); user-select: none; }
+  .file-link {
+    display: block; padding: 5px 16px 5px 24px; font-size: 13px; cursor: pointer;
+    color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    border-left: 2px solid transparent; transition: background .1s, border-color .1s;
+  }
+  .file-link:hover { background: var(--bg3); }
+  .file-link.active { color: var(--accent2); background: rgba(124,106,247,.12); border-left-color: var(--accent); }
+
+  /* ── Main ── */
+  #main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+  #topbar {
+    height: 42px; background: var(--bg2); border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; padding: 0 20px; gap: 8px;
+    font-size: 13px; color: var(--text-dim); flex-shrink: 0;
+  }
+  #breadcrumb span { cursor: pointer; }
+  #breadcrumb span:hover { color: var(--accent2); }
+  #breadcrumb .sep { margin: 0 4px; color: var(--border); }
+  #content { flex: 1; overflow-y: auto; padding: 40px 60px; max-width: 860px; width: 100%; }
+  #content-wrap { display: flex; justify-content: center; flex: 1; overflow: hidden; }
+
+  /* ── Markdown rendu ── */
+  #content h1 { font-size: 2em; font-weight: 800; color: #e2e8f0; margin: 0 0 .5em; padding-bottom: .3em; border-bottom: 2px solid var(--border); }
+  #content h2 { font-size: 1.35em; font-weight: 700; color: #cbd5e1; margin: 1.8em 0 .6em; }
+  #content h3 { font-size: 1.1em; font-weight: 700; color: #94a3b8; margin: 1.4em 0 .5em; }
+  #content h4 { font-size: 1em; font-weight: 600; color: var(--text-dim); margin: 1.2em 0 .4em; }
+  #content p  { margin: 0 0 .9em; }
+  #content ul, #content ol { margin: 0 0 .9em 1.6em; }
+  #content li { margin: .2em 0; }
+  #content hr { border: none; border-top: 1px solid var(--border); margin: 1.8em 0; }
+  #content blockquote { border-left: 3px solid var(--accent); padding: .4em 1em; margin: 1em 0; background: rgba(124,106,247,.07); border-radius: 0 6px 6px 0; font-style: italic; color: #94a3b8; }
+  #content code { font-family: 'Cascadia Code', 'Fira Code', Consolas, monospace; font-size: .88em; background: var(--code-bg); padding: .15em .4em; border-radius: 4px; color: #e2e8f0; }
+  #content pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1em 1.2em; overflow-x: auto; margin: 0 0 1em; }
+  #content pre code { background: none; padding: 0; }
+  #content table { border-collapse: collapse; width: 100%; margin: .8em 0 1.2em; font-size: .93em; }
+  #content th { background: var(--bg3); color: #e2e8f0; font-weight: 700; text-align: left; padding: 8px 14px; border: 1px solid var(--border); }
+  #content td { padding: 7px 14px; border: 1px solid var(--border); }
+  #content tr:nth-child(even) td { background: rgba(255,255,255,.025); }
+  #content a { color: var(--link); text-decoration: none; }
+  #content a:hover { text-decoration: underline; }
+  #content a.wiki { color: var(--accent2); cursor: pointer; }
+  #content a.wiki:hover { text-decoration: underline; }
+  #content strong { color: #e2e8f0; }
+
+  /* ── Tag badges ── */
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.4em; }
+  .tag { font-size: 11px; padding: 2px 8px; border-radius: 20px; background: rgba(124,106,247,.18); color: var(--accent2); font-weight: 600; }
+  .tag-statut { background: rgba(74,222,128,.12); color: var(--green); }
+
+  /* ── État vide ── */
+  #empty { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: var(--text-dim); gap: 12px; }
+  #empty svg { opacity: .3; }
+
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #4b5563; }
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div id="sidebar-header">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c6af7" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+    <span>Wiki YDA</span>
+  </div>
+  <input id="search" type="text" placeholder="Rechercher…" oninput="filterTree(this.value)">
+  <div id="tree"></div>
+</div>
+
+<div id="main">
+  <div id="topbar"><div id="breadcrumb"></div></div>
+  <div id="content-wrap">
+    <div id="content">
+      <div id="empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <p>Sélectionne un fichier dans le panneau de gauche</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── State ──────────────────────────────────────────────────────────
+let allFiles   = [];
+let currentPath = null;
+
+// ── Boot ───────────────────────────────────────────────────────────
+async function init() {
+  try {
+    const res = await fetch('/api/files');
+    allFiles  = await res.json();
+    renderTree(allFiles);
+    // Ouvrir Accueil par défaut
+    const accueil = allFiles.find(f => f.name === 'Accueil');
+    if (accueil) loadFile(accueil.path);
+  } catch(e) {
+    document.getElementById('content').innerHTML =
+      '<p style="color:#f87171">Impossible de charger la liste des fichiers.<br>Vérifie que start.bat est bien lancé.</p>';
+  }
+}
+
+// ── Tree ───────────────────────────────────────────────────────────
+function renderTree(files) {
+  const tree = document.getElementById('tree');
+  // Grouper par dossier
+  const groups = {};
+  files.forEach(f => {
+    const parts = f.path.split('/');
+    const folder = parts.length > 1 ? parts[0] : '—';
+    if (!groups[folder]) groups[folder] = [];
+    groups[folder].push(f);
+  });
+
+  let html = '';
+  Object.keys(groups).sort().forEach(folder => {
+    if (groups[folder].length === 0) return;
+    html += `<div class="folder">${folder === '—' ? 'Racine' : folder}</div>`;
+    groups[folder].forEach(f => {
+      html += `<div class="file-link" data-path="${f.path}" onclick="loadFile('${f.path}')">${f.name}</div>`;
+    });
+  });
+  tree.innerHTML = html;
+}
+
+function filterTree(query) {
+  const q = query.toLowerCase();
+  const filtered = q ? allFiles.filter(f => f.name.toLowerCase().includes(q) || f.path.toLowerCase().includes(q)) : allFiles;
+  renderTree(filtered);
+  if (currentPath) {
+    const el = document.querySelector(`.file-link[data-path="${currentPath}"]`);
+    if (el) el.classList.add('active');
+  }
+}
+
+// ── Load file ──────────────────────────────────────────────────────
+async function loadFile(pathOrName) {
+  // Résoudre un nom court (wikilink) vers un chemin complet
+  let resolvedPath = pathOrName;
+  if (!pathOrName.endsWith('.md')) {
+    // Chercher le fichier par nom (sans extension, insensible à la casse)
+    const name = pathOrName.toLowerCase().replace(/\s+/g, ' ').trim();
+    const match = allFiles.find(f =>
+      f.name.toLowerCase() === name ||
+      f.path.toLowerCase().replace('.md','') === name ||
+      f.path.toLowerCase().endsWith('/' + name + '.md')
+    );
+    if (match) resolvedPath = match.path;
+    else { console.warn('Fichier introuvable pour le wikilink:', pathOrName); return; }
+  }
+
+  try {
+    const res  = await fetch('/' + resolvedPath);
+    const text = await res.text();
+    renderMarkdown(text, resolvedPath);
+    currentPath = resolvedPath;
+    // Highlight sidebar
+    document.querySelectorAll('.file-link').forEach(el => el.classList.remove('active'));
+    const active = document.querySelector(`.file-link[data-path="${resolvedPath}"]`);
+    if (active) { active.classList.add('active'); active.scrollIntoView({ block: 'nearest' }); }
+    // Breadcrumb
+    const parts = resolvedPath.replace('.md','').split('/');
+    document.getElementById('breadcrumb').innerHTML = parts.map((p, i) =>
+      i < parts.length - 1
+        ? `<span>${p}</span><span class="sep">›</span>`
+        : `<span style="color:#e2e8f0;font-weight:600">${p}</span>`
+    ).join('');
+    document.getElementById('content-wrap').scrollTop = 0;
+  } catch(e) {
+    console.error('Erreur chargement:', resolvedPath, e);
+  }
+}
+
+// ── Markdown parser ────────────────────────────────────────────────
+function renderMarkdown(md, filePath) {
+  const content = document.getElementById('content');
+
+  // Strip frontmatter et extraire tags/statut
+  let tags = [], statut = '';
+  md = md.replace(/^---\n([\s\S]*?)\n---\n?/, (_, fm) => {
+    const tagsMatch = fm.match(/tags:\s*\n((?:\s+-\s+.+\n?)+)/);
+    if (tagsMatch) tags = tagsMatch[1].match(/- (.+)/g).map(t => t.replace('- ','').trim());
+    const statutMatch = fm.match(/statut:\s*(.+)/);
+    if (statutMatch) statut = statutMatch[1].trim();
+    return '';
+  });
+
+  const html = parseMarkdown(md.trim());
+
+  let badges = '';
+  if (tags.length || statut) {
+    badges = '<div class="tags">';
+    tags.forEach(t => badges += `<span class="tag">#${t}</span>`);
+    if (statut) badges += `<span class="tag tag-statut">${statut}</span>`;
+    badges += '</div>';
+  }
+
+  content.innerHTML = badges + html;
+
+  // Attacher les wikilinks générés dynamiquement
+  content.querySelectorAll('a.wiki').forEach(a => {
+    a.onclick = () => loadFile(a.dataset.target);
+  });
+}
+
+function parseMarkdown(md) {
+  const lines = md.split('\n');
+  let out = '', i = 0;
+
+  while (i < lines.length) {
+    const l = lines[i];
+
+    // Bloc de code
+    if (l.startsWith('```')) {
+      const lang = l.slice(3).trim();
+      let code = '';
+      i++;
+      while (i < lines.length && !lines[i].startsWith('```')) { code += lines[i] + '\n'; i++; }
+      out += `<pre><code class="lang-${esc(lang)}">${esc(code.trimEnd())}</code></pre>\n`;
+      i++; continue;
+    }
+
+    // Ligne vide
+    if (l.trim() === '') { out += '\n'; i++; continue; }
+
+    // Titres
+    const hm = l.match(/^(#{1,4})\s+(.*)/);
+    if (hm) { const n = hm[1].length; out += `<h${n}>${inline(hm[2])}</h${n}>\n`; i++; continue; }
+
+    // HR
+    if (l.match(/^---+$/) || l.match(/^\*\*\*+$/)) { out += '<hr>\n'; i++; continue; }
+
+    // Tableau
+    if (l.includes('|') && i+1 < lines.length && lines[i+1].match(/^\|?[\s:\-|]+\|?$/)) {
+      const heads = tableRow(l);
+      i += 2;
+      let t = '<table>\n<thead><tr>' + heads.map(c => `<th>${inline(c)}</th>`).join('') + '</tr></thead>\n<tbody>\n';
+      while (i < lines.length && lines[i].trim().startsWith('|')) {
+        t += '<tr>' + tableRow(lines[i]).map(c => `<td>${inline(c)}</td>`).join('') + '</tr>\n';
+        i++;
+      }
+      out += t + '</tbody>\n</table>\n'; continue;
+    }
+
+    // Blockquote
+    if (l.startsWith('> ')) {
+      let bq = '<blockquote>';
+      while (i < lines.length && lines[i].startsWith('> ')) { bq += inline(lines[i].slice(2)) + ' '; i++; }
+      out += bq.trimEnd() + '</blockquote>\n'; continue;
+    }
+
+    // Liste non-ordonnée
+    if (l.match(/^[-*+] /)) {
+      let ul = '<ul>\n';
+      while (i < lines.length && lines[i].match(/^[-*+] /)) {
+        ul += `<li>${inline(lines[i].replace(/^[-*+] /, ''))}</li>\n`; i++;
+      }
+      out += ul + '</ul>\n'; continue;
+    }
+
+    // Liste ordonnée
+    if (l.match(/^\d+\. /)) {
+      let ol = '<ol>\n';
+      while (i < lines.length && lines[i].match(/^\d+\. /)) {
+        ol += `<li>${inline(lines[i].replace(/^\d+\. /, ''))}</li>\n`; i++;
+      }
+      out += ol + '</ol>\n'; continue;
+    }
+
+    // Paragraphe
+    let p = '';
+    while (i < lines.length) {
+      const cl = lines[i];
+      if (!cl.trim() || cl.match(/^#{1,4} /) || cl.startsWith('```') ||
+          cl.match(/^---+$/) || cl.match(/^[-*+] /) || cl.match(/^\d+\. /) ||
+          cl.startsWith('> ') || (cl.includes('|') && i+1 < lines.length && lines[i+1].match(/^\|?[\s:\-|]+\|?$/))) break;
+      p += (p ? ' ' : '') + cl.trim(); i++;
+    }
+    if (p) out += `<p>${inline(p)}</p>\n`;
+  }
+  return out;
+}
+
+function inline(s) {
+  // Protéger le code inline
+  const codes = [];
+  s = s.replace(/`([^`]+)`/g, (_, c) => { codes.push(esc(c)); return `\x00C${codes.length-1}\x00`; });
+
+  s = esc(s);
+
+  // Wikilinks [[cible|texte]] ou [[cible]]
+  s = s.replace(/\[\[([^\]|]+?)(?:\|([^\]]+?))?\]\]/g, (_, tgt, lbl) => {
+    const t = tgt.replace(/\\/g, '').trim();
+    const d = (lbl || t).replace(/\\/g, '').trim();
+    return `<a class="wiki" data-target="${esc(t)}">${esc(d)}</a>`;
+  });
+
+  // Liens standard
+  s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+
+  // Gras + italique
+  s = s.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
+  s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  s = s.replace(/\*(.+?)\*/g,   '<em>$1</em>');
+
+  // Restaurer codes
+  s = s.replace(/\x00C(\d+)\x00/g, (_, n) => `<code>${codes[n]}</code>`);
+  return s;
+}
+
+function tableRow(line) {
+  return line.split('|').map(c => c.trim()).filter((c, i, a) =>
+    !(i === 0 && c === '') && !(i === a.length-1 && c === ''));
+}
+
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ── Keyboard shortcut : Ctrl+K pour rechercher ────────────────────
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+    e.preventDefault();
+    document.getElementById('search').focus();
+  }
+});
+
+init();
+</script>
+</body>
+</html>
