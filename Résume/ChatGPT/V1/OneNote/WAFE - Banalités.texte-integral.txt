@@ -1,0 +1,98 @@
+Général
+jeudi 19 novembre 2020
+15:22
+ 
+Dice face : 1/2/3 dmg and 1/2/3 defence
+En combat : utiliser les dès
+En défense : utiliser les dès
+En déplacement : utiliser les valeurs
+Pour les sorts : utiliser les cartes éléments + Lumière/ombre
+ 
+1 kill => 1 exp
+5 exp => 1 level
+1 level => 1 spell
+ 
+Child of light - turns
+ 
+ 
+Classes
+jeudi 19 novembre 2020
+15:06
+ 
+XHPAttackDéfenseEspritMoveEau (Soutien)32343Air (Move/Control)33234Feu (Dégats)34233Terre (Tank)43422
+ 
+ 
+Races
+jeudi 19 novembre 2020
+15:22
+ 
+Les différentes races :
+Lézard
+Renard
+Rat/Souris
+Castor
+Oiseau (Pie/Buse/PicVert/Corbeau)
+Lapin
+Tortue
+Belette/Fouine/Hermine
+Blaireau
+Chat
+Cerf/Biche/Daim
+Serpent
+Ecureuil
+Grenouille
+Herisson
+Loup
+Ours
+Salamandre
+Taupe
+Chauve sourie
+ 
+ 
+Elements
+jeudi 19 novembre 2020
+14:57
+ 
+Water : North / Winter / Phlegm
+Air : East / Spring / Blood
+Fire : Sud / Summer / Choleric
+Earth : West / Automn Melancholic
+ 
+XEauAirFeuTerreEauGlace   AirGazVol  FeuXFoudreFeu bleu TerrePlanteXLaveMetal
+ 
+ 
+ 
+ 
+  GravitéMétalSablePierre   PlanteTerreLave SangGlaceVieEau FeuFeu bleuFeu grégeoisFoudre? GazPoisonAirGazFoudre?   Son (barde)Vol  
+ 
+ 
+Lumière (Ordre) <-> Ombre (Chaos/Anarchie/Liberté)
+ 
+ 
+Animaux
+mardi 24 août 2021
+14:26
+ 
+AirOiseauxEauAmphibiens/poissons/tortues/Ragondin/Castor/loutreFeuReptiles/Prédateurs(Loup/Renard/Lynx)TerreRongeurs (Souris/Herisson/Lapin/Ecureuil/…)Les cervidés et sangliersOurs
+ 
+ 
+NomÉlémentTypePrédateurFamille  LézardFeuReptileOui   SerpentFeuReptileOui   RenardFeuMammifèreOui   RatTerreRongeurNon   SourisTerreRongeurNon   CastorEau/TerreMammifèreNon   PieAirOiseauNon   BuseAirOiseauOui   CorbeauAirOiseauNon   Rouge gorgeAirOiseauNon   Lapin/LièvreTerre/AirRongeurNon   TortueTerre/EauAmphibienNon   Belette/Hermine/Fouine/MartreTerreMammifèreOui   Blaireau      Chat      Cerf/Biche/Daim      Ecureuil      Grenouille Amphibien    Hérisson      Loup      Ours      Salamandre/Triton Amphibien    Taupe      Chauve-souris      Ragondin      Raton-laveur      Escargot?      Chouette      Sanglier      
+ 
+ 
+armes
+mardi 24 août 2021
+18:52
+ 
+Poings à la VI
+Parapluie épée bouclier
+Canne à pêche grappin
+Tonfa arme à feu
+Ciseaux
+ 
+ 
+Déplacements
+mardi 24 août 2021
+18:51
+ 
+Si au contact, les déplacements comptent doublent
+Jouer tous en même temps

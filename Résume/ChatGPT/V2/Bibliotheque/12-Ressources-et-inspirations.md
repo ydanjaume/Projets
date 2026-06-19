@@ -1,0 +1,53 @@
+# Ressources, matériel et inspirations
+
+## Matos
+
+mardi 11 juillet 2023
+
+09:06
+
+[https://toutpourlejeu.com/fr/de-neutre-en-plastique/649-de-12-faces-neutre-geant-a-personnaliser-3701525304877.html](https://toutpourlejeu.com/fr/de-neutre-en-plastique/649-de-12-faces-neutre-geant-a-personnaliser-3701525304877.html)
+
+## Sources
+
+mardi 5 novembre 2024
+
+17:08
+
+  - Voice of cards : cartes
+
+  - DungeonDraft : map
+
+  - Danmachi : tour + Arbre talent dans le dos
+
+  - Skyrim : arbre de talents
+
+  - New World : elements
+
+  - Albion : arbre d'apprentissage
+
+  - Child of light & Grandia : tours
+
+  - Pokemon : attaque/Types
+
+  - Danmachi : talents, tour, dieux
+
+  - Chained Echoes : spells
+
+  - Mice and mystics : fiche personnage
+
+  - Kingdoms : unités + chef de guerres
+
+  - Disco Elysium : stats
+
+## Jeux
+
+mardi 5 novembre 2024
+
+17:11
+
+Donjon
+
+Jeux de stratégie comme Kingdoms
+
+Jeu de volley
