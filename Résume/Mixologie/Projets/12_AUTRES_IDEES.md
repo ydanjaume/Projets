@@ -80,7 +80,7 @@ Projets en germe, sans mécanique définie. Chaque idée mérite sa propre fiche
 <details>
 <summary>Afficher la transcription exhaustive et les variantes historiques</summary>
 
-> Cette annexe est la couche de référence restaurée depuis Mixologie avant restructuration ($SourceCommit). Elle ne doit pas être condensée. Seuls les chemins des médias ont été adaptés à la nouvelle arborescence.
+> Cette annexe est la couche de référence restaurée depuis Mixologie avant restructuration (7db5550). Elle ne doit pas être condensée. Seuls les chemins des médias ont été adaptés à la nouvelle arborescence.
 
 > **Couche exhaustive — Jeu de type Reign.** Ce document conserve les formulations, variantes, répétitions, dates, tableaux et médias issus des exports. Il fait foi lorsqu’une synthèse éditoriale simplifie ou interprète un point.
 

@@ -126,4 +126,19 @@ Fichiers Mixologie : 34 Markdown (33 existants + CONTEXT.md) + 16 médias.
 
 ---
 
+### 2026-06-19 — Claude (claude-sonnet-4-6) — Passe de révision post-ChatGPT
+
+**Corrections appliquées :**
+
+- `$SourceCommit` — placeholder non résolu retrouvé dans les 13 annexes SOURCE-ARCHIVE ; remplacé par le hash réel `7db5550` sur tous les fichiers.
+- `05_WAFE_DONJON.md` — ajout d'un lien croisé vers `13_DONJON_A_PLUSIEURS.md` (lien réciproque manquant — l'autre fichier pointait déjà vers celui-ci).
+
+**Vérifications effectuées :**
+- README.md : à jour, arborescence correcte, 13 projets dans le tableau.
+- Catalogue.md : 7 entrées Notion, valeurs brutes, note sur l'échelle non définie.
+- Headers des fichiers WAFE : inférences marquées correctement.
+- Annexes SOURCE-ARCHIVE : présentes et équilibrées dans les 13 fichiers projet.
+
+---
+
 *Prochaine IA à travailler sur ce dossier : lire ce fichier en premier, puis IA_Share.md pour le contexte complet.*

@@ -1,6 +1,7 @@
 # WAFE — Donjon
 > Source : OneNote `WAFE - Donjon.docx` (nov. 2020 → juil. 2023)
 > Fait partie de la famille WAFE — voir [02_WAFE_UNIVERS.md](02_WAFE_UNIVERS.md)
+> Voir aussi : [13_DONJON_A_PLUSIEURS.md](13_DONJON_A_PLUSIEURS.md) — concept Notion distinct, maintenu séparé jusqu'à arbitrage de Yann.
 
 ---
 
@@ -367,7 +368,7 @@ La fiche Notion [Donjon à plusieurs](13_DONJON_A_PLUSIEURS.md) est maintenue co
 <details>
 <summary>Afficher la transcription exhaustive et les variantes historiques</summary>
 
-> Cette annexe est la couche de référence restaurée depuis Mixologie avant restructuration ($SourceCommit). Elle ne doit pas être condensée. Seuls les chemins des médias ont été adaptés à la nouvelle arborescence.
+> Cette annexe est la couche de référence restaurée depuis Mixologie avant restructuration (7db5550). Elle ne doit pas être condensée. Seuls les chemins des médias ont été adaptés à la nouvelle arborescence.
 
 > **Couche exhaustive — WAFE — Donjon.** Ce document conserve les formulations, variantes, répétitions, dates, tableaux et médias issus des exports. Il fait foi lorsqu’une synthèse éditoriale simplifie ou interprète un point.
 
