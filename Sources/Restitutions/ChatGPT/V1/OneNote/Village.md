@@ -1,6 +1,6 @@
 # Village
 
-Source : [Village.docx](../../../../Sources/OneNote/.Docx/Village.docx)
+Source : [Village.docx](../../../../Origine/OneNote/.Docx/Village.docx)
 
 > Transcription structurée de l’export DOCX OneNote. L’ordre des paragraphes, listes, tableaux, liens et images est conservé.
 

@@ -1,11 +1,11 @@
 param(
-    [string]$ProjectRoot = (Join-Path $PSScriptRoot '..')
+    [string]$ArchiveRoot = (Join-Path $PSScriptRoot '..')
 )
 
 $ErrorActionPreference = 'Stop'
-$ProjectRoot = [IO.Path]::GetFullPath($ProjectRoot)
-$V1 = Join-Path $ProjectRoot 'Résume\ChatGPT\V1'
-$Out = Join-Path $ProjectRoot 'Résume\ChatGPT\V2'
+$ArchiveRoot = [IO.Path]::GetFullPath($ArchiveRoot)
+$V1 = Join-Path $ArchiveRoot 'V1'
+$Out = Join-Path $ArchiveRoot 'V2'
 $Library = Join-Path $Out 'Bibliotheque'
 $Assets = Join-Path $Out 'assets'
 $Meta = Join-Path $Out '_meta'

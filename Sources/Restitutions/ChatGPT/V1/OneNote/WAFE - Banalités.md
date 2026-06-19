@@ -1,6 +1,6 @@
 # WAFE - Banalités
 
-Source : [WAFE - Banalités.docx](../../../../Sources/OneNote/.Docx/WAFE%20-%20Banalités.docx)
+Source : [WAFE - Banalités.docx](../../../../Origine/OneNote/.Docx/WAFE%20-%20Banalités.docx)
 
 > Transcription structurée de l’export DOCX OneNote. L’ordre des paragraphes, listes, tableaux, liens et images est conservé.
 

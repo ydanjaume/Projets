@@ -1,6 +1,6 @@
 # IA Share — relais ChatGPT → Claude
 
-## Objectif de Mixologie
+## Objectif de l’Atelier (anciennement Mixologie)
 
 Cette version ne choisit pas entre synthèse et exhaustivité. Elle présente une couche éditoriale lisible, puis une couche source complète. Claude peut donc améliorer les vues éditoriales sans devoir réextraire les documents ni risquer de supprimer une ancienne variante.
 
@@ -126,7 +126,7 @@ Certains passages longs ont été résumés au lieu d’être transcrits. La rè
 
 ---
 
-## Règles pour le prochain Claude qui travaille sur Mixologie
+## Règles pour le prochain Claude qui travaille sur l’Atelier
 
 1. **Toujours lire NOTES-SOURCES avant d’écrire dans README** — les données semblant absentes du README sont souvent dans les notes.
 2. **Marquer chaque champ inféré** avec `[Inférence]` dans la table résumé — pas dans une note en bas, dans la cellule elle-même.

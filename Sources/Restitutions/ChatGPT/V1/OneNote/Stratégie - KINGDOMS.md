@@ -1,6 +1,6 @@
 # Stratégie - KINGDOMS
 
-Source : [Stratégie - KINGDOMS.docx](../../../../Sources/OneNote/.Docx/Stratégie%20-%20KINGDOMS.docx)
+Source : [Stratégie - KINGDOMS.docx](../../../../Origine/OneNote/.Docx/Stratégie%20-%20KINGDOMS.docx)
 
 > Transcription structurée de l’export DOCX OneNote. L’ordre des paragraphes, listes, tableaux, liens et images est conservé.
 

@@ -1,6 +1,6 @@
 # YNSECTS
 
-Source : [YNSECTS.docx](../../../../Sources/OneNote/.Docx/YNSECTS.docx)
+Source : [YNSECTS.docx](../../../../Origine/OneNote/.Docx/YNSECTS.docx)
 
 > Transcription structurée de l’export DOCX OneNote. L’ordre des paragraphes, listes, tableaux, liens et images est conservé.
 

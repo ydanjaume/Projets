@@ -1,6 +1,6 @@
 # CONTEXT — Document de référence partagé Claude & ChatGPT
 
-> **Ce fichier est la première chose à lire** avant tout travail sur Mixologie.
+> **Ce fichier est la première chose à lire** avant tout travail sur l’Atelier.
 > Il contient les règles en vigueur et l'historique de ce qui a été fait.
 > Chaque IA doit le mettre à jour à la fin de sa session.
 
@@ -10,8 +10,9 @@
 
 1. **Lire les règles** avant de toucher quoi que ce soit.
 2. **Appliquer les règles** sans exception — elles existent parce qu'un problème a déjà été rencontré.
-3. **Ajouter une entrée dans le changelog** à la fin de chaque session, avec la date et la liste des modifications.
-4. **Ajouter ou mettre à jour une règle** dès que Yann en formule une nouvelle.
+3. **Ajouter une entrée dans [`Documentation/changelog.md`](../Documentation/changelog.md)** à chaque session qui modifie un fichier, avec date, heure, auteur, portée et contrôles.
+4. **Mettre à jour le changelog avant le commit** avec `Commit : en attente`, puis renseigner le hash si la session effectue le commit.
+5. **Ajouter ou mettre à jour une règle dans ce fichier** dès que Yann en formule une nouvelle.
 
 ---
 
@@ -56,6 +57,9 @@ Si des tableaux sont dans l’annexe exhaustive, les copier (pas paraphraser) da
 **R10 — Couche éditoriale vs couche source dans un fichier unique**
 La couche éditoriale, placée en premier : synthèse lisible, fiche signalétique, pitch, sections claires.
 La couche source, placée en annexe repliable : transcription intégrale, aucune condensation.
+
+**R11 — Journaliser chaque modification**
+Toute personne ou IA qui modifie un fichier doit ajouter une entrée dans [`Documentation/changelog.md`](../Documentation/changelog.md). L’entrée précise obligatoirement la date, l’heure Europe/Paris, l’auteur réel du travail, l’auteur Git s’il diffère, la portée, les changements et les contrôles. Ne jamais attribuer une modification à une IA sans preuve ; utiliser « auteur non déterminé » si nécessaire.
 
 ---
 
@@ -138,6 +142,27 @@ Fichiers Mixologie : 34 Markdown (33 existants + CONTEXT.md) + 16 médias.
 - Catalogue.md : 7 entrées Notion, valeurs brutes, note sur l'échelle non définie.
 - Headers des fichiers WAFE : inférences marquées correctement.
 - Annexes SOURCE-ARCHIVE : présentes et équilibrées dans les 13 fichiers projet.
+
+### 2026-06-19 — ChatGPT — Création du changelog partagé
+
+- Création de `Documentation/changelog.md` avec format obligatoire date/heure/auteur.
+- Reconstruction de l’historique depuis les commits `0bbeaf7` à `eeff65c`, le contexte et les relais IA.
+- Ajout de la règle R11 et remplacement du changelog interne comme journal principal par le fichier dédié.
+- Ajout du lien au changelog dans le README Mixologie.
+
+### 2026-06-19 — ChatGPT — Mixologie déplacé à la racine
+
+- `Mixologie/` devient le répertoire principal de travail à la racine du dépôt.
+- Les restitutions ChatGPT et Claude sont archivées sous `Sources/Restitutions/` avec les sources dont elles dérivent.
+- Les deux générateurs ChatGPT reproductibles sont archivés dans `Sources/Restitutions/ChatGPT/Outils/`.
+- Les scripts de création de l’ancienne Mixologie et de migration ponctuelle ont été supprimés.
+- Le journal détaillé avec heure et contrôles se trouve dans `Documentation/changelog.md`.
+
+### 2026-06-19 — ChatGPT — Mixologie renommé Atelier
+
+- Le répertoire principal `Mixologie/` est renommé `Atelier/` à la demande de Yann.
+- Les liens actifs, README, consignes IA et outils archivés utilisent désormais le nom Atelier.
+- Les mentions de Mixologie sont conservées lorsqu’elles décrivent une étape historique antérieure au renommage.
 
 ---
 

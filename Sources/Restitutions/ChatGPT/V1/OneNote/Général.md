@@ -1,6 +1,6 @@
 # Général
 
-Source : [Général.docx](../../../../Sources/OneNote/.Docx/Général.docx)
+Source : [Général.docx](../../../../Origine/OneNote/.Docx/Général.docx)
 
 > Transcription structurée de l’export DOCX OneNote. L’ordre des paragraphes, listes, tableaux, liens et images est conservé.
 

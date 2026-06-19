@@ -1,6 +1,6 @@
 # WAFE - LandProtect
 
-Source : [WAFE - LandProtect.docx](../../../../Sources/OneNote/.Docx/WAFE%20-%20LandProtect.docx)
+Source : [WAFE - LandProtect.docx](../../../../Origine/OneNote/.Docx/WAFE%20-%20LandProtect.docx)
 
 > Transcription structurée de l’export DOCX OneNote. L’ordre des paragraphes, listes, tableaux, liens et images est conservé.
 

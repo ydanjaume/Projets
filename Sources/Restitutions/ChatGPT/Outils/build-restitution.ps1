@@ -1,6 +1,6 @@
 param(
-    [string]$SourceRoot = (Join-Path $PSScriptRoot '..\Sources'),
-    [string]$OutputRoot = (Join-Path $PSScriptRoot '..\Résume\ChatGPT\V1')
+    [string]$SourceRoot = (Join-Path $PSScriptRoot '..\..\..\Origine'),
+    [string]$OutputRoot = (Join-Path $PSScriptRoot '..\V1')
 )
 
 $ErrorActionPreference = 'Stop'

@@ -1,6 +1,6 @@
 # Sport - BOXE
 
-Source : [Sport - BOXE.docx](../../../../Sources/OneNote/.Docx/Sport%20-%20BOXE.docx)
+Source : [Sport - BOXE.docx](../../../../Origine/OneNote/.Docx/Sport%20-%20BOXE.docx)
 
 > Transcription structurée de l’export DOCX OneNote. L’ordre des paragraphes, listes, tableaux, liens et images est conservé.
 

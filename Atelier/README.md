@@ -1,4 +1,4 @@
-# Mixologie — Bibliothèque des projets de jeux
+# Atelier — Bibliothèque des projets de jeux
 
 > **Pour Claude et ChatGPT :** lire [IA/CONTEXT.md](IA/CONTEXT.md) en premier — règles en vigueur et changelog.
 
@@ -7,14 +7,15 @@
 ## Structure
 
 ```
-Mixologie/
+Atelier/
 ├── README.md               ← ce fichier
 ├── IA/
-│   ├── CONTEXT.md          ← règles et changelog (lire en premier)
-│   └── IA_Share.md         ← analyse des deux IAs
+│   ├── CONTEXT.md          ← règles de collaboration (lire en premier)
+│   └── IA_Share.md         ← échange entre les IA (à renseigner pour échanges)
 ├── Documentation/
 │   ├── Catalogue.md        ← catalogue Notion de tous les projets
-│   └── References.md       ← toutes les inspirations et références
+│   ├── References.md       ← toutes les inspirations et références
+│   └── changelog.md        ← journal daté de Yann et des IA
 └── Projets/
     ├── _exemple.md         ← template pour un nouveau projet
     ├── 01_SHEEPERING.md
@@ -32,6 +33,15 @@ Mixologie/
     ├── 13_DONJON_A_PLUSIEURS.md
     └── assets/             ← images issues des sources OneNote et Notion
 ```
+
+---
+
+## Documentation
+
+- [Changelog partagé](Documentation/changelog.md) — historique daté des interventions de Yann et des IA
+- [Catalogue](Documentation/Catalogue.md) — projets issus de Notion
+- [Références](Documentation/References.md) — inspirations et sources communes
+- [Contexte IA](IA/CONTEXT.md) — règles obligatoires avant toute modification
 
 ---
 

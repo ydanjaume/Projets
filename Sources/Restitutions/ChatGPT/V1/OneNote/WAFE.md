@@ -1,6 +1,6 @@
 # WAFE
 
-Source : [WAFE.docx](../../../../Sources/OneNote/.Docx/WAFE.docx)
+Source : [WAFE.docx](../../../../Origine/OneNote/.Docx/WAFE.docx)
 
 > Transcription structurée de l’export DOCX OneNote. L’ordre des paragraphes, listes, tableaux, liens et images est conservé.
 

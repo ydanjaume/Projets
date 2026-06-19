@@ -1,6 +1,6 @@
 # WAFE - King battle
 
-Source : [WAFE - King battle.docx](../../../../Sources/OneNote/.Docx/WAFE%20-%20King%20battle.docx)
+Source : [WAFE - King battle.docx](../../../../Origine/OneNote/.Docx/WAFE%20-%20King%20battle.docx)
 
 > Transcription structurée de l’export DOCX OneNote. L’ordre des paragraphes, listes, tableaux, liens et images est conservé.
 
