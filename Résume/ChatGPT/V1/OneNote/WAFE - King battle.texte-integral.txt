@@ -1,0 +1,43 @@
+Général
+jeudi 19 novembre 2020
+14:56
+ 
+Armello like
+ 
+Système de décrets par jour choisi par le héro le plus mighty
+Systèmes de quêtes en fonction de certaines cases du tableaux
+Des dès avec :
+Attaque (1,2,3)
+Défense (1,2,3)
+Des dès avec :
+Chaque élément + ombre/lumière
+ 
+Durant combat :
+(1) Magie : nombre de dès correspondant à nos sorts
+(Pour l'initiateur) Attaque : nombre de dès d'attaque
+(Pour le receveur) Défense : nombre de dès de défense
+(Pour le receveur) Attaque : nombre de dès d'attaque
+(Pour l'initiateur) Défense : nombre de dès de défense
+ 
+Les donjons :
+Lancer des dès qui correspondent au donjon (EAU / TERRE)
+ 
+ 
+Légende :
+E : Eau
+A : Air
+F : Feu
+T : Terre
+ET : Marécage
+AE : Glace
+FA : Foudre
+TF : Lave
+X : Palais
+D : Donjon
+ 
+ 
+EEEEAEAAAAEEEAEDAEAAAEEEEAEAAAAEETEXXXAFAAETDETXXXFADFATETTXXXFFAFTTTTTFFFFFTTTTFDTFFFFTTTTTFFFFF
+ 
+ 
+Liens :
+https://steamcommunity.com/sharedfiles/filedetails/?id=771786413
