@@ -9,16 +9,16 @@
 
 | | |
 |---|---|
-| **Thème** | Insectes (Fourmis, Abeilles) |
+| **Thème** | Insectes [Source : visuels — voir note] |
 | **État** | Idée embryonnaire |
 | **Type** | Non défini |
 | **Joueurs** | Non défini |
 | **Difficulté** | Non définie |
 | **Interaction** | Non définie |
-| **Envie de dév.** | ★☆☆☆☆ |
+| **Envie de dév.** | — [Non renseigné dans les sources] |
 | **Inspirations** | — |
 
-> Projet à l'état de germe autour du thème des insectes sociaux — fourmis et abeilles. Seule mention explicite : une section fanart.
+> Projet à l'état de germe. Le texte OneNote ne décrit aucun concept — le thème des insectes est déduit des **images** (fourmis, abeille, libellule, mante orchidée, fourmi coupe-feuille, frelon géant asiatique). Ce n'est donc pas uniquement un jeu sur les "insectes sociaux" : les visuels couvrent plusieurs ordres d'insectes.
 
 ---
 

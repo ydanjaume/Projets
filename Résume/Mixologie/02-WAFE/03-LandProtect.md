@@ -9,16 +9,16 @@
 
 | | |
 |---|---|
-| **Thème** | Survie, Construction, Éléments |
+| **Thème** | Éléments, Besoins fondamentaux |
 | **État** | Idée embryonnaire |
-| **Type** | Gestion / Survie (mode de l'univers WAFE) |
+| **Type** | Non défini [Inférence Claude précédente : "Gestion / Survie" — non confirmé par la source] |
 | **Joueurs** | Non défini |
 | **Difficulté** | Non définie |
 | **Interaction** | Non définie |
-| **Envie de dév.** | ★☆☆☆☆ |
+| **Envie de dév.** | — [Non renseigné dans les sources] |
 | **Inspirations** | — |
 
-> Mode de l'univers WAFE centré sur la **survie et la construction**. Chaque élément est associé à un besoin fondamental du monde.
+> Les seules notes disponibles associent chaque élément à une fonction vitale. Aucun mode de jeu, aucune mécanique, aucun objectif n'est défini dans les sources.
 
 ---
 

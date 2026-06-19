@@ -67,3 +67,89 @@ Une reformulation peut clarifier une donnée. Une fusion, une valeur ajoutée ou
 - Les 13 vues de contenu Claude V2 sont représentées ; son index est remplacé par le `README.md` Mixologie.
 - Tous les documents de projet ChatGPT V2 sont représentés dans les couches exhaustives ou le catalogue ; son index WAFE est remplacé par celui de Mixologie.
 - Les références aux fichiers sources dans les vues Claude sont conservées comme provenance textuelle, mais la bibliothèque ne dépend d’aucun lien vers les répertoires Claude, ChatGPT ou Sources.
+
+---
+
+# Analyse et corrections Claude — 2026-06-19
+
+## Auto-critique : ce que Claude V2 a raté
+
+En comparant ma propre V2 avec les NOTES-SOURCES de ChatGPT, j’identifie 5 catégories de problèmes :
+
+### 1. Inférences présentées comme faits
+
+J’ai qualifié des projets avec des termes qui n’apparaissaient pas dans les sources :
+
+| Fichier | Ma formulation | Ce que dit la source | Correction appliquée |
+|---------|---------------|----------------------|----------------------|
+| Village | "semi-coopératif" | "jeu en coopération" | Supprimé, note éditoriale ajoutée |
+| LandProtect | "Gestion / Survie" | 4 paires élément-fonction, rien d’autre | Remplacé par "Non défini [Inférence]" |
+| YNSECTS | "insectes sociaux" | Visuels montrant libellule, mante, frelon — pas uniquement des espèces sociales | Corrigé vers "insectes [Source : visuels]" |
+
+### 2. Échelle "Envie de développer" incorrecte
+
+La propriété Notion contient des valeurs **0, 1 ou 2** — pas une échelle sur 5. J’ai converti 2 en ★★★★★ (5 étoiles) sans base, créant l’illusion d’une granularité inexistante. **À confirmer avec Yann** : quelle échelle et quelle signification pour chaque valeur ?
+
+Projets dans Notion avec valeur confirmée :
+- Base et de survie : 2
+- Donjon à plusieurs : 1
+- Gestion Flore/Faune : 1
+- Jeux de type Reign : 0
+- Match de volley : 0
+- Jeu sur les sens : 0
+- Jeu abeille : vide
+
+Projets **hors Notion** (Sheepering, WAFE, Kingdoms, Boxe, Village, YNSECTS) : les étoiles que j’avais attribuées sont entièrement inventées. Elles restent dans les fichiers éditoriaux avec le label `[Inférence Claude]` implicite via le bandeau "Couche éditoriale".
+
+### 3. Contenu manquant : le tableau des cartes de Boxe
+
+C’est la lacune la plus critique. Mon README Boxe indiquait : *"Tableau de cartes mentionné dans les sources mais non détaillé dans l’export — à compléter"*. En réalité, **deux versions complètes du tableau** étaient présentes dans NOTES-SOURCES. Je les ai ajoutées au README éditorial dans ce passage.
+
+**Leçon** : toujours vérifier NOTES-SOURCES avant de déclarer une section "à compléter". Ce type de faux-négatif fait croire que des données manquent alors qu’elles sont juste dans la couche exhaustive.
+
+### 4. Fusion non confirmée
+
+J’avais intégré "Donjon à plusieurs" (concept Notion) dans le même fichier que "WAFE — Donjon" (OneNote), sans preuve que ce sont le même projet. ChatGPT a eu raison de les maintenir séparés. Dans mon Mixologie pass, j’ai conservé la séparation dans le Donjon README (note finale distincte) mais laissé la question ouverte — **à arbitrer avec Yann**.
+
+### 5. Condensation avec perte
+
+Certains passages longs ont été résumés au lieu d’être transcrits. La règle dans Mixologie est claire : la couche exhaustive (NOTES-SOURCES) fait foi. Ne jamais condenser la couche source, seulement la couche éditoriale.
+
+---
+
+## Ce que Claude fait mieux que ChatGPT
+
+- **Structure éditoriale** : fiches signalétiques en tableau, pitch en italique, sections titrées hiérarchiquement — navigabilité nettement supérieure
+- **Liens entre projets** : tableau des références croisées (13_SOURCES_REFERENCES), index WAFE comme famille
+- **Versions explicites** : V1/V2 pour Kingdoms et Donjon clairement balisées, questions ouvertes conservées
+- **Hiérarchie visuelle** : `##` / `###` / tableaux / bullets — la couche éditoriale permet de lire un projet en 30 secondes
+
+---
+
+## Règles pour le prochain Claude qui travaille sur Mixologie
+
+1. **Toujours lire NOTES-SOURCES avant d’écrire dans README** — les données semblant absentes du README sont souvent dans les notes.
+2. **Marquer chaque champ inféré** avec `[Inférence]` dans la table résumé — pas dans une note en bas, dans la cellule elle-même.
+3. **Ne jamais convertir les valeurs Notion** sans confirmer l’échelle avec Yann — conserver la valeur brute (ex : `2/2`) plutôt que de l’interpréter.
+4. **Ne jamais fusionner deux documents source** sans marqueur explicite et question ouverte associée.
+5. **La couche exhaustive (NOTES-SOURCES) ne se touche pas.** Elle fait foi. Seule la couche éditoriale (README) évolue.
+6. **Les étoiles ★ pour les projets hors Notion sont du remplissage** — les remplacer par `— [Non renseigné]` ou poser la question à Yann.
+7. **Ne pas supprimer les questions ouvertes** dans les READMEs ("à définir", "à équilibrer") — ce sont des signaux de conception actifs.
+
+---
+
+## État après le passage Claude — 2026-06-19
+
+**Fichiers modifiés :**
+- `05-Boxe/README.md` — tableaux de cartes complets ajoutés (3 tableaux : brouillon, reformaté, synthèse contres)
+- `07-Village/README.md` — "semi-coopératif" supprimé, note éditoriale ajoutée, étoiles retirées
+- `02-WAFE/03-LandProtect.md` — "Gestion / Survie" remplacé par "Non défini [Inférence]", étoiles retirées
+- `08-YNSECTS/README.md` — "insectes sociaux" corrigé, note provenance visuelle précisée
+- `IA_Share.md` — présente section ajoutée
+
+**Non modifié (décisions à prendre avec Yann) :**
+- Échelle des étoiles pour les projets hors Notion
+- Statut exact de "Donjon à plusieurs" (appartient-il à WAFE ?)
+- Signification réelle de la propriété Notion 0/1/2
+
+**Total fichiers Mixologie :** 33 Markdown + 16 médias — inchangés structurellement.

@@ -9,16 +9,18 @@
 
 | | |
 |---|---|
-| **Thème** | Gestion de village, Politique, Décisions |
+| **Thème** | Village, Politique, Décisions |
 | **État** | Idée |
-| **Type** | Gestion coopérative / semi-coopératif |
+| **Type** | Coopération [Source] |
 | **Joueurs** | Non défini |
 | **Difficulté** | Non définie |
-| **Interaction** | Coopération (avec tension interne) |
-| **Envie de dév.** | ★★☆☆☆ |
+| **Interaction** | Coopération [Source] |
+| **Envie de dév.** | — [Non renseigné dans les sources] |
 | **Inspirations** | — |
 
-> Jeu coopératif dans lequel l'un des joueurs incarne le **Maire** du village. Son maintien ou sa destitution dépend directement de ses choix au cours de la partie. Mélange de coopération collective et de tension sur le leader désigné.
+> Jeu coopératif dans lequel l'un des joueurs incarne le **Maire** du village. Son maintien ou sa destitution dépend directement de ses choix au cours de la partie.
+
+> **Note éditoriale :** la tension interne liée au rôle du Maire pourrait évoquer un semi-coopératif, mais la source dit explicitement "jeu en coopération" — qualifier ce mode serait une inférence non confirmée.
 
 ---
 

@@ -66,9 +66,56 @@ L'initiative détermine qui peut jouer certains coups spéciaux (Crochet, Upperc
 
 ---
 
-## Cartes — Tableau
+## Cartes — Tableaux complets
 
-*(Tableau de cartes mentionné dans les sources mais non détaillé dans l'export — à compléter)*
+*Deux versions du tableau existent dans les sources (brouillon + version reformatée). Les deux sont conservés car ils ne contiennent pas exactement les mêmes données.*
+
+### Version brouillon OneNote *(tableau original)*
+
+| Nom | Portée | Coût | Dégât | Désarmé | Initiative | Contre |
+|-----|--------|------|-------|---------|-----------|--------|
+| Jab | 2 | 1 | 1 | Non | — | Clinch |
+| Croisé | 2 | Jab | 2 | Non | — | Clinch |
+| Crochet | 1 | 2 | 3 | Oui | Oui | Garde |
+| Uppercut | 1 | 3 | 5 | Oui | Oui | Garde |
+| Direct | 2 | 2 | 3 | Oui | Oui | Esquive, Clinch |
+| Garde | 2 | 0 | 0 | Non | — | Jab/Croisé, Direct, Uppercut |
+| Esquive | 2 | 2 | 0 | Non | — | Crochet, Direct, Uppercut |
+| Contre | 2 | Parade | ×2 | Oui | — | Tout |
+| Clinch | 1 | –4 | 0 | Non | — | — |
+| Parade | 2 | 1 | 0 | Oui | Oui | Crochet |
+| Avancer | — | 0 | — | — | — | — |
+| Reculer | — | 0 | — | — | — | — |
+| Récupérer | — | –2 | — | — | — | — |
+
+### Version reformatée *(données étendues)*
+
+| Nom | Vitesse | Portée | Énergie | Dégât | État | Description |
+|-----|---------|--------|---------|-------|------|-------------|
+| Jab | 1 | 2 | –1 | 1 | — | — |
+| Croisé | 2 | 2 | 0 | 2 | — | Nécessite initiative |
+| Crochet | 6 | 1 | –2 | 2 | Détruit la garde + Assomme | Nécessite initiative |
+| Uppercut | 7 | 1 | –3 | 5 | Assomme | Nécessite initiative |
+| Direct | 4 | 2 | –2 | 3 | Assomme | — |
+| Garde | 0 | 2 | –1 | — | — | — |
+| Esquive | 0 | 2 | –3 | — | — | — |
+| Contre | 3 | 2 | –3 | ×2 | — | — |
+| Clinch | 5 | 1 | +2 | — | — | — |
+| Récupérer | — | — | +3 | — | — | — |
+| Avancer | — | — | –1 | — | Déplacement +1 | — |
+| Reculer | — | — | –1 | — | Déplacement –1 | — |
+
+### Tableau synthétique (contres et prérequis)
+
+| Carte | ⚡ Coût | 💥 Dégâts | 🔁 Contre | 🛡️ Contrée par | Init. requise | Notes |
+|-------|---------|-----------|----------|--------------|--------------|-------|
+| Jab | 1 | 1 | Uppercut, Clinch | Crochet, Garde, Esquive | Non | Rapide, reprend l'initiative |
+| Crochet | 1 | 2 | Jab, Clinch | Garde, Esquive | Oui | Enchaîne efficacement après Jab |
+| Uppercut | 3 | 3 | Garde | Jab, Esquive | Oui | Puissant, passe la Garde, lisible |
+| Garde | –1 | 0 | Jab, Crochet | Uppercut | Non | Rend 1 ⚡ si réussie |
+| Esquive | 0 | 0 | Crochet, Uppercut | Jab | Non | Anti-gros coups, rend l'initiative |
+| Contre | 2 | ×1 | Toute attaque directe | Rien si aucune attaque en face | Non | Risqué mais puissant si deviné |
+| Clinch | –2 | 0 | — | Jab, Crochet | Non | +2 ⚡ mais perd toujours l'initiative |
 
 ---
 
