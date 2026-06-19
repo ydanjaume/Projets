@@ -1,31 +1,60 @@
-# Mixologie — Bibliothèque consolidée des projets de jeux
+# Mixologie — Bibliothèque des projets de jeux
 
-Cette bibliothèque combine les deux V2 :
+> **Pour Claude et ChatGPT :** lire [IA/CONTEXT.md](IA/CONTEXT.md) en premier — règles en vigueur et changelog.
 
-- **Claude** apporte une vue éditoriale, des résumés, des fiches projet et une organisation immédiatement exploitable ;
-- **ChatGPT** apporte la couverture exhaustive, les variantes historiques, les tableaux complets et les médias.
+---
 
-Chaque projet important possède donc une **vue éditoriale** (`README.md`) et des **notes exhaustives** (`NOTES-SOURCES.md`). En cas de contradiction, les notes exhaustives priment tant qu’une décision de conception n’a pas été explicitement arbitrée.
+## Structure
 
-## Bibliothèque
+```
+Mixologie/
+├── README.md               ← ce fichier
+├── IA/
+│   ├── CONTEXT.md          ← règles et changelog (lire en premier)
+│   └── IA_Share.md         ← analyse des deux IAs
+├── Documentation/
+│   ├── Catalogue.md        ← catalogue Notion de tous les projets
+│   └── References.md       ← toutes les inspirations et références
+└── Projets/
+    ├── _exemple.md         ← template pour un nouveau projet
+    ├── 01_SHEEPERING.md
+    ├── 02_WAFE_UNIVERS.md
+    ├── 03_WAFE_KING_BATTLE.md
+    ├── 04_WAFE_LANDPROTECT.md
+    ├── 05_WAFE_DONJON.md
+    ├── 06_KINGDOMS.md
+    ├── 07_BASE_ET_SURVIE.md
+    ├── 08_BOXE.md
+    ├── 09_VOLLEY.md
+    ├── 10_VILLAGE.md
+    ├── 11_YNSECTS.md
+    ├── 12_AUTRES_IDEES.md
+    └── assets/             ← images issues des sources OneNote et Notion
+```
 
-| Projet | Vue éditoriale | Notes exhaustives |
-|---|---|---|
-| Sheepering | [Ouvrir](01-Sheepering/README.md) | [Sources](01-Sheepering/NOTES-SOURCES.md) |
-| WAFE | [Ouvrir](02-WAFE/README.md) | Par module |
-| KINGDOMS | [Ouvrir](03-Kingdoms/README.md) | [Sources](03-Kingdoms/NOTES-SOURCES.md) |
-| Base et de survie | [Ouvrir](04-Base-et-survie/README.md) | [Sources](04-Base-et-survie/NOTES-SOURCES.md) |
-| Boxe | [Ouvrir](05-Boxe/README.md) | [Sources](05-Boxe/NOTES-SOURCES.md) |
-| Volley | [Ouvrir](06-Volley/README.md) | [Sources](06-Volley/NOTES-SOURCES.md) |
-| Village | [Ouvrir](07-Village/README.md) | [Sources](07-Village/NOTES-SOURCES.md) |
-| YNSECTS | [Ouvrir](08-YNSECTS/README.md) | [Sources](08-YNSECTS/NOTES-SOURCES.md) |
-| Autres idées | [Ouvrir](09-Autres-idees/README.md) | Une fiche par idée |
+---
 
-## Documents transversaux
+## Projets
 
-- [Catalogue Notion](00-Catalogue-Notion.md)
-- [Références consolidées](10-References.md)
-- [Notes générales originales](10-References-NOTES-SOURCES.md)
-- [Relais entre IA](IA_Share.md)
+| # | Projet | État | Envie de dév. |
+|---|--------|------|---------------|
+| 01 | [Sheepering](Projets/01_SHEEPERING.md) | Prototype | — |
+| 02 | [WAFE — Univers](Projets/02_WAFE_UNIVERS.md) | En cours | — |
+| 03 | [WAFE — King Battle](Projets/03_WAFE_KING_BATTLE.md) | Idée développée | — |
+| 04 | [WAFE — LandProtect](Projets/04_WAFE_LANDPROTECT.md) | Embryonnaire | — |
+| 05 | [WAFE — Donjon](Projets/05_WAFE_DONJON.md) | En cours (V1+V2) | 1/2 |
+| 06 | [Kingdoms](Projets/06_KINGDOMS.md) | En cours (V1+V2) | — |
+| 07 | [Base et de survie](Projets/07_BASE_ET_SURVIE.md) | En cours | 2/2 |
+| 08 | [Boxe](Projets/08_BOXE.md) | En cours | — |
+| 09 | [Volley](Projets/09_VOLLEY.md) | Idée | 0/2 |
+| 10 | [Village](Projets/10_VILLAGE.md) | Idée | — |
+| 11 | [YNSECTS](Projets/11_YNSECTS.md) | Embryonnaire | — |
+| 12 | [Autres idées](Projets/12_AUTRES_IDEES.md) | Idées | 0–1/2 |
 
-Les médias sont centralisés dans `assets/` et référencés depuis les notes exhaustives.
+> La colonne "Envie de dév." affiche les valeurs Notion brutes (0, 1 ou 2). Les "—" correspondent aux projets hors Notion dont la valeur est inconnue.
+
+---
+
+## Nouveau projet
+
+Copier [Projets/_exemple.md](Projets/_exemple.md), remplir l'entête et les sections.

@@ -1,0 +1,39 @@
+# Village
+> Sources : OneNote `Village.docx` — 15 juillet 2025
+
+---
+
+## Résumé
+
+| | |
+|---|---|
+| **Thème** | Village, Politique, Décisions |
+| **État** | Idée |
+| **Type** | Coopération [Source] |
+| **Joueurs** | Non défini |
+| **Difficulté** | Non définie |
+| **Interaction** | Coopération [Source] |
+| **Envie de dév.** | — [Non renseigné dans les sources] |
+| **Inspirations** | — |
+
+> *Jeu coopératif dans lequel l'un des joueurs incarne le Maire du village. Son maintien ou sa destitution dépend directement de ses choix au cours de la partie.*
+
+> **Note :** la tension interne liée au rôle du Maire pourrait évoquer un semi-coopératif, mais la source dit explicitement "jeu en coopération" — qualifier ce mode serait une inférence non confirmée.
+
+---
+
+## Concept
+
+- Jeu en **coopération**
+- Un joueur = le **Maire** — rôle à part entière
+- Le Maire est **gardé ou destitué** selon ses décisions en jeu
+
+*(Aucune autre mécanique définie dans les notes)*
+
+---
+
+## Questions ouvertes
+
+- [ ] Combien de joueurs en dehors du Maire ?
+- [ ] Quels types de décisions le Maire doit-il prendre ?
+- [ ] Comment fonctionne le vote de destitution ?

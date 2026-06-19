@@ -1,7 +1,5 @@
 # Sport — Boxe
-
-> **Couche éditoriale.** Cette page organise et synthétise les notes. Les champs de maturité, les étoiles et certaines qualifications sont des lectures de Claude, pas toujours des données explicitement écrites dans les sources.
-> Source : OneNote `Sport - BOXE.docx` — juillet 2025
+> Sources : OneNote `Sport - BOXE.docx` — juillet 2025
 
 ---
 
@@ -15,10 +13,10 @@
 | **Joueurs** | 2 |
 | **Difficulté** | Moyen |
 | **Interaction** | Versus |
-| **Envie de dév.** | ★★★☆☆ |
+| **Envie de dév.** | — [Non renseigné dans les sources] |
 | **Inspirations** | — |
 
-> Jeu de cartes dans lequel deux joueurs incarnent chacun un boxeur. À chaque tour, les deux joueurs choisissent secrètement une carte et la révèlent simultanément. Le vainqueur est celui qui réduit les PV de l'adversaire à 0 en gérant intelligemment son énergie, son initiative et ses coups.
+> *Jeu de cartes dans lequel deux joueurs incarnent chacun un boxeur. À chaque tour, les deux joueurs choisissent secrètement une carte et la révèlent simultanément. Le vainqueur est celui qui réduit les PV de l'adversaire à 0 en gérant intelligemment son énergie, son initiative et ses coups.*
 
 ---
 
@@ -139,10 +137,3 @@ L'initiative détermine qui peut jouer certains coups spéciaux (Crochet, Upperc
 | Deck fermé | Petit deck à épuisement — ex : 3 exemplaires de chaque type de carte |
 | Effet KO | Si un joueur reçoit 3 dégâts en 1 tour → jet de "stabilité" pour rester debout |
 | Cartes bonus événement | Fatigue · Sang · Seconde chance · etc. |
-
-
----
-
-## Notes exhaustives
-
-La transcription complète, les variantes et les éléments non retenus dans cette synthèse sont dans [NOTES-SOURCES.md](NOTES-SOURCES.md).

@@ -1,7 +1,5 @@
 # Stratégie — KINGDOMS
-
-> **Couche éditoriale.** Cette page organise et synthétise les notes. Les champs de maturité, les étoiles et certaines qualifications sont des lectures de Claude, pas toujours des données explicitement écrites dans les sources.
-> Source : OneNote `Stratégie - KINGDOMS.docx`
+> Sources : OneNote `Stratégie - KINGDOMS.docx` — V1 : 5 novembre 2024 · V2 : 13 août 2025
 
 ---
 
@@ -15,10 +13,10 @@
 | **Joueurs** | 2 ou 4 |
 | **Difficulté** | Non définie |
 | **Interaction** | Versus |
-| **Envie de dév.** | ★★★☆☆ |
-| **Inspirations** | Champ d'honneur, Voice of cards (V2) |
+| **Envie de dév.** | — [Non renseigné dans les sources] |
+| **Inspirations** | Champ d'honneur, Voice of Cards (V2) |
 
-> Jeu de guerre médiéval sur plateau hexagonal. Chaque joueur commande une armée composée d'unités aux stats et compétences distinctes. Trois voies vers la victoire : tuer le général adverse, capturer son QG, ou accumuler des points. La V2 fait pivoter le concept vers des personnages animaux sur cartes (inspiré Voice of cards).
+> *Jeu de guerre médiéval sur plateau hexagonal. Chaque joueur commande une armée composée d'unités aux stats et compétences distinctes. Trois voies vers la victoire : tuer le général adverse, capturer son QG, ou accumuler des points. La V2 fait pivoter le concept vers des personnages animaux sur cartes (inspiré Voice of Cards).*
 
 ---
 
@@ -114,7 +112,7 @@
 
 ---
 
-### Matériel (représentation)
+### Matériel
 
 - Pions ou figurines avec designs distinctifs par type d'unité
 - Cartes d'unité : caractéristiques imprimées pour référence rapide
@@ -123,27 +121,17 @@
 
 ---
 
-### Structure du contenu à développer (outline V1)
+### Contenu à développer (outline V1)
 
-**Unités :**
-- Unités de base
 - Unités de factions
-- Stats : PV / Défense / Déplacement / Attaque / Portée
-
-**Terrains :**
-- Plaine de base
-- Types spéciaux (Montagne, Eau, Désert, Marais, …)
-- *(Cachés ?)*
-
-**Événements :**
-- Unités ennemies à éliminer qui apparaissent sur le plateau
-- Événements de terrain (brume, éclair, …)
+- Types de terrains supplémentaires : Montagne, Eau, Désert, Marais, ... *(cachés ?)*
+- Événements : unités ennemies à éliminer qui apparaissent sur le plateau
 
 ---
 
 ## Version 2 *(13 août 2025)*
 
-> Pivot thématique : abandon du médiéval humain classique, passage à un système de **cartes animaux** sur plateau hexagonal, inspiré de Voice of cards.
+> Pivot thématique : abandon du médiéval humain classique, passage à un système de **cartes animaux** sur plateau hexagonal, inspiré de Voice of Cards.
 
 ### Personnages-cartes
 
@@ -157,27 +145,16 @@
 
 ### Système de combat
 
-**Stats par carte :**
-- Attaque
-- Défense
-- Vie
-- Ordre d'attaque
-- Déplacement
-- Points de vie autour de la carte (à tourner pour indiquer la vie)
+**Stats par carte :** Attaque · Défense · Vie · Ordre d'attaque · Déplacement
+
+Points de vie autour de la carte (à tourner pour indiquer la vie restante).
 
 **Ordre du tour :** Défini par l'ordre d'attaque — un joueur commence puis l'autre à chaque fin de tour. *(Possibilité de mélanger pour des ordres aléatoires)*
 
 **Règle de placement :** Les cartes doivent toujours toucher une carte existante → commencer avec quelques cartes terrains sur la table.
 
-### Contenu à développer
+### Contenu à développer (V2)
 
-- Sorts
-- Armes
-- Sorts de déplacement ou d'attaque pour les animaux
-
-
----
-
-## Notes exhaustives
-
-La transcription complète, les variantes et les éléments non retenus dans cette synthèse sont dans [NOTES-SOURCES.md](NOTES-SOURCES.md).
+- [ ] Sorts
+- [ ] Armes
+- [ ] Sorts de déplacement ou d'attaque pour les animaux

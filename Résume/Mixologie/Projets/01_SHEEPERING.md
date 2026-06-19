@@ -1,7 +1,5 @@
 # Sheepering
-
-> **Couche éditoriale.** Cette page organise et synthétise les notes. Les champs de maturité, les étoiles et certaines qualifications sont des lectures de Claude, pas toujours des données explicitement écrites dans les sources.
-> Source : GitHub — `Sources/Github/Sheepering.md` — v1.2
+> Sources : GitHub — `Sources/Github/Sheepering.md` — v1.2
 
 ---
 
@@ -15,10 +13,10 @@
 | **Joueurs** | 1 à 4 |
 | **Difficulté** | Moyen |
 | **Interaction** | Coopération |
-| **Envie de dév.** | ★★★★★ |
+| **Envie de dév.** | — [Non renseigné dans les sources] |
 | **Inspirations** | — |
 
-> Les joueurs incarnent des **chiens de berger** qui escortent un troupeau de la ferme jusqu'au pâturage final, en évitant loups et événements imprévisibles. Pas de défaite — on cherche à sauver le maximum de moutons à chaque partie.
+> *Les joueurs incarnent des chiens de berger qui escortent un troupeau de la ferme jusqu'au pâturage final, en évitant loups et événements imprévisibles. Il n'y a pas de défaite — on cherche à sauver le maximum de moutons à chaque partie.*
 
 ---
 
@@ -30,6 +28,8 @@ Un mouton atteignant le **pâturage final** est **immédiatement sauvé** : reti
 
 ## Configuration par nombre de joueurs
 
+Il existe **4 types de chiens**, chacun en un seul exemplaire. Deux joueurs ne peuvent pas jouer le même chien.
+
 | Joueurs | Chiens | Moutons | Loups max | Répartition |
 |---------|--------|---------|-----------|-------------|
 | 1 | 3 | 9 | 9 | Choisit 3 types parmi 4, contrôle les 3 |
@@ -37,8 +37,8 @@ Un mouton atteignant le **pâturage final** est **immédiatement sauvé** : reti
 | 3 | 3 | 9 | 9 | Choisit 3 types parmi 4, 1 chien par joueur |
 | 4 | 4 | 12 | 12 | 1 chien par joueur, 1 type chacun |
 
-- **Loups max = 3 × chiens.** Au-delà, aucun nouveau loup n'apparaît.
-- Les moutons sont **numérotés** — numéros uniques, jamais d'égalité.
+**Loups max = 3 × chiens.** Au-delà du plafond, aucun nouveau loup n'apparaît.
+Les moutons sont **numérotés** (numéros uniques, jamais d'égalité).
 
 ---
 
@@ -46,7 +46,7 @@ Un mouton atteignant le **pâturage final** est **immédiatement sauvé** : reti
 
 ### Le chemin
 
-12 tuiles posées et révélées avant la partie : 6 droites + 6 diagonales (orientation aléatoire). Relie l'enclos au pâturage final.
+12 tuiles posées et révélées avant la partie : 6 droites + 6 diagonales (orientation gauche/droite aléatoire). Relie l'enclos au pâturage final.
 
 | Type de tuile | Qté | Effet |
 |---------------|-----|-------|
@@ -69,6 +69,8 @@ Un mouton atteignant le **pâturage final** est **immédiatement sauvé** : reti
 
 Toute case **occupée** doit être entourée de tuiles révélées. Dès qu'une entité entre sur une case dont une case adjacente est vide → piocher et révéler immédiatement une tuile terrain.
 
+**Orientation :** Nord fixe. Les 6 directions : nord, nord-est, sud-est, sud, sud-ouest, nord-ouest.
+
 | Terrain | Qté | Franchissable | Effet |
 |---------|-----|---------------|-------|
 | Prairie | 16 | Tous | Aucun |
@@ -77,11 +79,9 @@ Toute case **occupée** doit être entourée de tuiles révélées. Dès qu'une 
 | Montagne | 3 | Personne | Infranchissable |
 | Trou / Ravin | 2 | Chiens & loups | Infranchissable pour les moutons |
 
-**Orientation :** Nord fixe. Les 6 directions : nord, nord-est, sud-est, sud, sud-ouest, nord-ouest.
-
 ### Placement initial
 
-Les joueurs choisissent leurs chiens, puis placent librement sur la ferme et ses 5 prairies adjacentes : tous les moutons, tous les chiens, et le berger.
+Les joueurs choisissent leurs types de chiens, puis placent librement sur la ferme et ses 5 prairies adjacentes : tous les moutons, tous les chiens, et le berger.
 
 ---
 
@@ -113,9 +113,7 @@ Les joueurs choisissent leurs chiens, puis placent librement sur la ferme et ses
 
 ## Chiens de berger
 
-### Système
-
-Chaque chien : **3 déplacements + 1 action** par tour, dans n'importe quel ordre. Traversent tous les terrains. Peuvent se trouver sur la même case. Passer sur un loup ne l'élimine pas.
+Chaque chien dispose de **3 déplacements** et **1 action** par tour, dans n'importe quel ordre. Traversent tous les terrains. Peuvent se trouver sur la même case. Passer sur un loup ne l'élimine pas.
 
 ### Actions standard (tous les chiens, chaque tour)
 
@@ -167,11 +165,7 @@ Chaque chien : **3 déplacements + 1 action** par tour, dans n'importe quel ordr
 
 ### Instincts sauvages — Apparition de loups
 
-| Intensité | Règle |
-|-----------|-------|
-| 🟡 Faible | 1 loup dans 1 forêt aléatoire |
-| 🟠 Modéré | 1 loup par forêt à ≤ 4 cases du troupeau |
-| 🔴 Fort | 1 loup dans toutes les forêts révélées |
+**Niveaux :** 🟡 Faible = 1 loup dans 1 forêt aléatoire | 🟠 Modéré = 1 loup par forêt à ≤4 cases du troupeau | 🔴 Fort = 1 loup dans toutes les forêts révélées
 
 | Carte | Intensité | Effet |
 |-------|-----------|-------|
@@ -234,13 +228,13 @@ Dès que le berger atteint le pâturage final → **3 tours de rapatriement** (j
 | Chiens | 3 + action | Traversent tout · même case OK · 1 action spéciale/partie |
 | Loups | 3 | Contournent les obstacles · bloqués par chiens/berger |
 
+| Chien | Action spéciale | Usage |
+|-------|-----------------|-------|
+| Patou | Gel (loups immobiles 1 tour) | 1× par partie |
+| Border Collie | Grand Sprint (+2 dépl.) | 1× par partie |
+| Berger Allemand | Grand Aboiement (portée 2) | 1× par partie |
+| Bouvier des Flandres | Rassemblement (zone 7 cases) | 1× par partie |
+
 **Priorité moutons :** Fuir loup → Événement → Berger → Immobile
 
 **Conflit multi-moutons :** toujours du plus petit au plus grand numéro.
-
-
----
-
-## Notes exhaustives
-
-La transcription complète, les variantes et les éléments non retenus dans cette synthèse sont dans [NOTES-SOURCES.md](NOTES-SOURCES.md).

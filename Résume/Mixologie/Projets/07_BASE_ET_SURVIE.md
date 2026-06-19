@@ -1,6 +1,4 @@
 # Base et de survie
-
-> **Couche éditoriale.** Cette page organise et synthétise les notes. Les champs de maturité, les étoiles et certaines qualifications sont des lectures de Claude, pas toujours des données explicitement écrites dans les sources.
 > Sources : OneNote `Général.docx` + Notion `Base et de survie.md`
 
 ---
@@ -15,10 +13,10 @@
 | **Joueurs** | 2 à 4 |
 | **Difficulté** | Moyen |
 | **Interaction** | Coopération |
-| **Envie de dév.** | ★★☆☆☆ (2/5) |
+| **Envie de dév.** | 2/2 [Source Notion] |
 | **Inspirations** | ARMELLO, Mice and Mystics, Voice of Cards |
 
-> Jeu d'exploration coopératif sur plateau hexagonal à révélation progressive. Chaque joueur incarne un héros animal aux mécaniques radicalement différentes — un se bat au corps-à-corps, un autre gère des pions soldats, un autre a des capacités psychiques. Les tuiles révélées peuvent être des ressources, un marché, un village ou un monstre.
+> *Jeu d'exploration coopératif sur plateau hexagonal à révélation progressive. Chaque joueur incarne un héros animal aux mécaniques radicalement différentes. Les tuiles révélées peuvent être des ressources, un marché, un village ou un monstre.*
 
 ---
 
@@ -45,7 +43,7 @@
 | Prédateur | Bernard le Renard | — |
 | Terrestre | Martin le Lapin | — |
 
-*(Fiche personnage illustrée présente dans les sources Notion — images non extractibles)*
+*(Fiche personnage illustrée présente dans les sources Notion — voir images)*
 
 ### Sorts élémentaires
 
@@ -62,9 +60,7 @@
 
 ### Ressources
 
-- Bois
-- Eau
-- Terre
+Bois · Eau · Terre
 
 ### Armes & Armures
 
@@ -87,8 +83,6 @@ Tuiles de forme **hexagonale**.
 | Forêt | *(à définir)* |
 | Sable | *(à définir)* |
 | Brume | *(à définir)* |
-
-*(Image du plateau type disponible dans les sources Notion)*
 
 ---
 
@@ -117,7 +111,7 @@ Tuiles de forme **hexagonale**.
 
 ---
 
-## Références *(OneNote — Général)*
+## Références
 
 | Référence | Ce qui est emprunté |
 |-----------|-------------------|
@@ -134,9 +128,10 @@ Tuiles de forme **hexagonale**.
 | Chained Echoes | Spells |
 | Disco Elysium | Stats |
 
-
 ---
 
-## Notes exhaustives
+## Images (sources Notion)
 
-La transcription complète, les variantes et les éléments non retenus dans cette synthèse sont dans [NOTES-SOURCES.md](NOTES-SOURCES.md).
+- `assets/base-et-survie/image.png` — Fiche personnage
+- `assets/base-et-survie/image 1.png` — Fiche personnage (suite)
+- `assets/base-et-survie/image 2.png` — Plateau type

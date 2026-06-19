@@ -1,6 +1,4 @@
 # Sources & Références globales
-
-> **Couche éditoriale.** Cette page organise et synthétise les notes. Les champs de maturité, les étoiles et certaines qualifications sont des lectures de Claude, pas toujours des données explicitement écrites dans les sources.
 > Source : OneNote `Général.docx` — sections Matos (11 juillet 2023) & Sources (5 novembre 2024)
 
 Récapitulatif de toutes les références citées dans les notes de Yann Danjaume, avec leur usage identifié.
@@ -24,7 +22,7 @@ Récapitulatif de toutes les références citées dans les notes de Yann Danjaum
 | **Voice of Cards** | Cartes personnage · Cartes sorts · Partage de la mana | Base et de survie · Donjon · Kingdoms V2 |
 | **DungeonDraft** | Outil de cartographie (map) | Base et de survie |
 | **Duelyst** | Mode plateau turn-based | WAFE Univers |
-| **The begin After the end** | Éléments + Beast | WAFE Univers |
+| **The Begin After the End** | Éléments + Beast | WAFE Univers |
 | **Zelda BOTW** | Carte ouverte | WAFE Univers |
 | **Biomutant** | Arbre de compétences | WAFE Univers |
 | **Démon Slayer** | Éléments | WAFE Univers |
@@ -39,6 +37,7 @@ Récapitulatif de toutes les références citées dans les notes de Yann Danjaum
 | **Mice and Mystics** | Fiche personnage · Liste des attaques · Fonctionnement des tours | Base et de survie · Donjon |
 | **Kingdoms / Champ d'honneur** | Unités + chef de guerres · Plateau hexagonal | KINGDOMS |
 | **Reign** | Prise de décision par cartes | Jeux type Reign |
+| **Armello** | Décrets · Plateau élémentaire · Système de dés | King Battle |
 
 ---
 
@@ -49,10 +48,3 @@ Récapitulatif de toutes les références citées dans les notes de Yann Danjaum
 | **Haikyuu** | Référence thématique | Volley |
 | **Seven Deadly Sins** | Pouvoirs des dieux / divinités | WAFE Univers · Donjon |
 | **Danmachi / SAO** | Tour avec niveaux | WAFE PvE |
-
-
----
-
-## Notes exhaustives
-
-La transcription complète, les variantes et les éléments non retenus dans cette synthèse sont dans [NOTES-SOURCES.md](10-References-NOTES-SOURCES.md).

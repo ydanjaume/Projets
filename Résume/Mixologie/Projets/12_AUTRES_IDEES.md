@@ -1,7 +1,7 @@
 # Autres idées
+> Sources : Notion — fiches individuelles
 
-> **Couche éditoriale.** Cette page organise et synthétise les notes. Les champs de maturité, les étoiles et certaines qualifications sont des lectures de Claude, pas toujours des données explicitement écrites dans les sources.
-> Source : Notion — fichiers individuels
+Projets en germe, sans mécanique définie. Chaque idée mérite sa propre fiche si elle se développe.
 
 ---
 
@@ -15,8 +15,8 @@
 | **Joueurs** | 1 à 4 |
 | **Difficulté** | Moyen |
 | **Interaction** | Coopération |
-| **Envie de dév.** | ★☆☆☆☆ (0/5) |
-| **Inspiration** | *Reign* |
+| **Envie de dév.** | 0/2 [Source Notion] |
+| **Inspirations** | *Reign* |
 
 > Jeu de cartes à prises de décision inspiré du jeu *Reign*. Aucune mécanique définie au-delà du thème.
 
@@ -32,7 +32,7 @@
 | **Joueurs** | 1 à 4 |
 | **Difficulté** | Difficile |
 | **Interaction** | Coopération |
-| **Envie de dév.** | ★☆☆☆☆ (1/5) |
+| **Envie de dév.** | 1/2 [Source Notion] |
 | **Inspirations** | — |
 
 > Idée de jeu coopératif autour de la construction d'une forêt en gérant flore et faune. Difficulté prévue élevée. Aucune mécanique définie.
@@ -49,7 +49,7 @@
 | **Joueurs** | 4 exactement |
 | **Difficulté** | Simple |
 | **Interaction** | Coopération |
-| **Envie de dév.** | ★☆☆☆☆ (0/5) |
+| **Envie de dév.** | 0/2 [Source Notion] |
 | **Inspirations** | — |
 
 > Jeu d'ambiance coopératif à 4 joueurs mettant en scène les 5 sens. Format simple. Aucune mécanique définie.
@@ -66,7 +66,7 @@
 | **Joueurs** | Non défini |
 | **Difficulté** | Non définie |
 | **Interaction** | Non définie |
-| **Envie de dév.** | — |
+| **Envie de dév.** | — [Non renseigné] |
 | **Inspirations** | — |
 
 > Concept autour de la colonie d'abeilles comme métaphore de la gestion d'équipe en entreprise. Aucune donnée supplémentaire documentée.

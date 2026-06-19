@@ -1,7 +1,6 @@
-# Donjon
-
-> **Couche éditoriale.** Cette page organise et synthétise les notes. Les champs de maturité, les étoiles et certaines qualifications sont des lectures de Claude, pas toujours des données explicitement écrites dans les sources.
+# WAFE — Donjon
 > Sources : OneNote `WAFE - Donjon.docx` (nov. 2020 → juil. 2023) + Notion `Donjon à plusieurs.md`
+> Fait partie de la famille WAFE — voir [02_WAFE_UNIVERS.md](02_WAFE_UNIVERS.md)
 
 ---
 
@@ -10,15 +9,15 @@
 | | |
 |---|---|
 | **Thème** | Donjon, Combats, Aventure coopérative |
-| **État** | En cours — deux versions documentées |
+| **État** | En cours — deux versions documentées (V1 et V2) |
 | **Type** | Cartes + Dés — coopératif |
 | **Joueurs** | 2 à 6 |
 | **Difficulté** | Moyen |
 | **Interaction** | Coopération |
-| **Envie de dév.** | ★★☆☆☆ (1/5) |
+| **Envie de dév.** | 1/2 [Source Notion — "Donjon à plusieurs"] |
 | **Inspirations** | Voice of Cards, Pokémon, Dungeon & Dragons, Mice and Mystics |
 
-> Mode donjon de l'univers WAFE. Les joueurs choisissent un rôle (humain, animal ou élément) et explorent un plateau de cartes retournées — trésors, monstres, pièges, reliques. Un système de **piste d'initiative** détermine l'ordre des actions. Les personnages sont représentés par des cartes que l'on tourne pour indiquer leur PV / esprit / mana restants.
+> *Mode donjon de l'univers WAFE. Les joueurs choisissent un rôle (humain, animal ou élément) et explorent un plateau de cartes retournées — trésors, monstres, pièges, reliques. Un système de piste d'initiative détermine l'ordre des actions. Les personnages sont représentés par des cartes que l'on tourne pour indiquer leurs ressources restantes.*
 
 ---
 
@@ -63,11 +62,20 @@ La carte personnage se **tourne et se retourne** pour indiquer les ressources :
 
 ---
 
-### Humains
+### Humains — Classes jouables (V1)
 
-Leur position sur la carte affiche leur nombre de **points de vie**.
+| Race | Caractéristique | Armure | Vitesse | Attaque |
+|------|----------------|--------|---------|---------|
+| Druide | Animaux : peut utiliser jusqu'à 2 animaux | 0 | 2 | 1 |
+| Barde | Muse : permet un déplacement en plus par tour | 0 | — | 2 |
+| Guerrier | Furie : peut faire une deuxième attaque suite à un coup critique | 2 | — | — |
+| Guérisseur | Soin : peut rendre un dé de 6 de soin une fois par niveau | 0 | — | — |
+| Élémentaliste | Peut utiliser un sort d'élément gratuitement par tour | 3 | — | — |
+| Chasseur | Sniper : peut faire une 2e attaque à distance sur coup critique | 1 | — | — |
+| Assassin | — | 0 | — | — |
+| Défenseur | — | 0 | — | — |
 
-*(Types à définir)*
+*(Leur position sur la carte affiche le nombre de points de vie)*
 
 ---
 
@@ -83,11 +91,13 @@ Leur position affiche leur reste d'**esprit**.
 | Hibou | Piquet offensif (2) | Avance de 2 places sur la piste d'attaque |
 | Tortue | Repli défensif (2) | Protège de 2 pts d'attaque |
 
+*(V2 : les animaux sont passifs)*
+
 ---
 
 ### Éléments
 
-Leur position affiche leur reste de **mana**.
+Leur position affiche leur reste de **mana**. V2 : peut avoir un élément **primaire ET un secondaire**.
 
 ---
 
@@ -135,7 +145,9 @@ Leur position affiche leur reste de **mana**.
 | Dague | Ignore l'armure | Si résultat > 2 → loupe l'attaque |
 | Lance | Si résultat > 2 → attaque une seconde cible | Si résultat = 3 → perd l'arme pendant 1 tour |
 
-### Armures — Version Personnage *(V1)*
+*V2 : chaque arme a 3 modes — attaque · attaque critique · échec*
+
+### Armures — V1 Personnage
 
 | Catégorie | Défense | Nom | Effet |
 |-----------|---------|-----|-------|
@@ -146,13 +158,13 @@ Leur position affiche leur reste de **mana**.
 | Légère | 0 | Armure tressée | Avance d'un sur la piste d'initiative quand esquive |
 | Légère | 0 | Robe d'érudit | Réduit de 1 le coût des éléments quand max dés |
 
-### Armures — Version V2
+### Armures — V2
 
 | Catégorie | Défense | Nom | Effet |
 |-----------|---------|-----|-------|
 | Lourde | 2 | Armure d'épine | Inflige 1 dégât quand touché |
 | Lourde | 2 | Armure flamboyante | Attire les attaques |
-| Moyenne | 1 | Armure de cuir | Réduit de 1 le coup des attaques d'animaux |
+| Moyenne | 1 | Armure de cuir | Réduit de 1 le coût des attaques d'animaux |
 | Légère | 0 | Armure tressée | Avance d'un sur la piste d'initiative quand esquive |
 | Légère | 0 | Robe d'érudit | +1 aux dégâts des éléments |
 
@@ -160,7 +172,7 @@ Leur position affiche leur reste de **mana**.
 
 ## Ennemis *(29 janvier 2023)*
 
-**Zones associées à chaque élément :**
+### Zones par élément
 
 | Niveau | Élément | Ennemis |
 |--------|---------|---------|
@@ -177,27 +189,23 @@ Leur position affiche leur reste de **mana**.
 | 3 | Lumière | *(à définir)* |
 | 3 | Métal | *(à définir)* |
 
-**Catégories globales d'ennemis :**
-Blobs · Élémentaires · Animaux · Animaux élémentaires · Humanoïdes · Humanoïdes élémentaires · Humanoïdes élémentaires animaux
+**Catégories globales :** Blobs · Élémentaires · Animaux · Animaux élémentaires · Humanoïdes · Humanoïdes élémentaires · Humanoïdes élémentaires animaux
 
 ---
 
 ## JEU V1 — Matériel *(10 juillet 2023)*
 
-### Questions de conception ouvertes
+### Questions ouvertes
 
 - Dés pour les PV et l'énergie/esprit/mana ?
-- Énergie comme Mice and Mystics :
-  - 1 gemme de mana par tour
-  - 1 gemme d'esprit à chaque coup touché
-  - 3 gemmes d'énergie à la fin de chaque tour
+- Énergie comme Mice and Mystics : 1 gemme de mana/tour · 1 gemme d'esprit/coup touché · 3 gemmes d'énergie/fin de tour
 - Dés pour les dégâts sur joueurs/monstres
 
 ### Dés
 
 | Dé | Faces |
 |----|-------|
-| 1× D6 Événement | Repos (restauration vie) · Trésor (armes) · Élément · Bête · Monstre |
+| 1× D6 Événement | Repos · Trésor (armes) · Élément · Bête · Monstre |
 | 2× D6 Nature *ou* 1× D12 | Eau · Terre · Feu · Air · Rien · Rien |
 | 1× D6 Réussite | 2 échecs (dégâts avec désav.) · 2 réussites (dégâts) · 1 réussite critique (dégâts + avantage) · 1 échec critique |
 | 1× D6 | Dégâts |
@@ -210,12 +218,12 @@ Blobs · Élémentaires · Animaux · Animaux élémentaires · Humanoïdes · H
 
 ### Plateau
 
-- 1 plateau **12×12** avec numérotation :
+- **Plateau 12×12** avec :
   - ↑ Haut : piste niveaux de donjon *(boss tous les 7)*
   - ↓ Bas : piste des Boss
   - → Droite : piste joueurs/monstres
   - ← Gauche : piles de cartes
-- Plateau **8×8** pour les combats *(ou plus ?)*
+- **Plateau 8×8** pour les combats *(ou plus ?)*
 
 ### Statistiques
 
@@ -238,7 +246,7 @@ Niveau · Santé · Armure · Déplacement · Attaque · (Portée)
 | Lumière | Pas d'action |
 | Métal | +2 en forme de + |
 
-### Spells — Énergie
+### Énergie (Spells)
 
 | Type | Règle |
 |------|-------|
@@ -254,20 +262,12 @@ Niveau · Santé · Armure · Déplacement · Attaque · (Portée)
 
 **Ajout V2 :** À chaque apparition de monstre → pose un élément sur le plateau
 
-**Éléments V2 :** Peut avoir un élément **primaire** ET un **secondaire**
-
-**Animaux V2 :** Passifs *(contrairement à actifs en V1)*
-
 ### Dés V2
 
 | Dé | Faces |
 |----|-------|
 | 1× D6 Événement | Événement · Événement · Repos · Rencontre Simple · Rencontre Moyen · Rencontre Fort |
 | Autres dés | Identiques à V1 |
-
-### Cartes V2
-
-- 12 cartes carrées : chaque type de terrain ×4
 
 ### Événements V2
 
@@ -279,9 +279,26 @@ Niveau · Santé · Armure · Déplacement · Attaque · (Portée)
 | Pertes d'items | — |
 | Bonus de stats | — |
 
-### Équipements V2
+### Étages V2
 
-Chaque arme a désormais **3 modes** : attaque · attaque critique · échec
+| Niveau | Caractéristiques |
+|--------|-----------------|
+| 1 | 1 monstre — première rencontre simple |
+| 2–8 | Dé aléatoire |
+| 9 | Boss |
+| 10 | Repos + Trésor (jet de 6) |
+
+### Paliers de difficulté V2
+
+| Niveau | Type Monstres | Description |
+|--------|--------------|-------------|
+| 1 | E | Éléments simples |
+| 2 | A | Animaux |
+| 3 | AE | Animaux éléments |
+| 4 | H | Humanoïdes |
+| 5 | HE | Humanoïdes éléments |
+| 6 | HA | Humanoïdes animaux |
+| 7 | HEA | Humanoïdes éléments animaux |
 
 ---
 
@@ -319,13 +336,19 @@ Charme · Gravité · Changement de masse · Changement de taille · Boost d'une
 
 ## Note Notion — Donjon à plusieurs
 
-> *"Voice of cards — Les cartes de personnage sont collées pour interagir et peuvent attaquer en fonction de la position."*
+> *Concept issu de Notion (fiche séparée). À arbitrer avec Yann : est-ce le même projet que WAFE Donjon ou un projet distinct ?*
 
-Idée alternative / complémentaire : les cartes de personnage sont physiquement **adjacentes** et l'attaque dépend de leur **positionnement relatif** sur la table.
+**Source Notion :**
+- État : Idée · Interaction : Coopération · Type : Cartes, Dés · Joueurs : 2 à 6 · Difficulté : Moyen · Envie de développer : 1/2
 
+**Concept :** Voice of Cards — les cartes de personnage sont collées pour interagir et peuvent attaquer en fonction de la position (idée alternative ou complémentaire : les cartes sont physiquement adjacentes et l'attaque dépend de leur positionnement relatif sur la table).
 
 ---
 
-## Notes exhaustives
+## Images (sources OneNote)
 
-La transcription complète, les variantes et les éléments non retenus dans cette synthèse sont dans [NOTES-SOURCES.md](04-Donjon-NOTES-SOURCES.md).
+- `assets/wafe-donjon/image1.jpeg`
+- `assets/wafe-donjon/image2.jpg`
+- `assets/wafe-donjon/image3.jpeg`
+- `assets/wafe-donjon/image4.jpeg`
+- `assets/wafe-donjon/image5.jpeg`
