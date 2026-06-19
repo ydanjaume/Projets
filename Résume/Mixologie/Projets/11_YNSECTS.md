@@ -42,9 +42,55 @@ Les fanarts montrent des fourmis stylisées, un personnage insecte ailé, ainsi 
 - `assets/ynsects/image2.jpg`
 - `assets/ynsects/image3.jpg`
 
+![Fanart — fourmis stylisées](assets/ynsects/image1.jpg)
+
+![Fanart — personnage insecte ailé](assets/ynsects/image2.jpg)
+
+![Fanart — classes d’insectes](assets/ynsects/image3.jpg)
+
 ---
 
 ## Questions ouvertes
 
 - [ ] Quel est le concept de jeu autour des insectes ?
 - [ ] Jeu de société ou jeu vidéo ?
+
+
+---
+
+<!-- SOURCE-ARCHIVE:BEGIN -->
+## Annexe — Notes sources exhaustives
+
+<details>
+<summary>Afficher la transcription exhaustive et les variantes historiques</summary>
+
+> Cette annexe est la couche de référence restaurée depuis Mixologie avant restructuration ($SourceCommit). Elle ne doit pas être condensée. Seuls les chemins des médias ont été adaptés à la nouvelle arborescence.
+
+> **Couche exhaustive — ChatGPT V2.** Ce document conserve les formulations, variantes, répétitions, dates, tableaux et médias issus des exports. Il fait foi lorsqu’une synthèse éditoriale simplifie ou interprète un point.
+
+# YNSECTS
+
+## Général
+
+jeudi 16 décembre 2021
+
+18:34
+
+## Fanart
+
+jeudi 16 décembre 2021
+
+18:34
+
+Fourmis
+
+Abeilles
+
+![Image incorporée](assets/ynsects/image1.jpg)
+
+![Image incorporée](assets/ynsects/image2.jpg)
+
+![Image incorporée](assets/ynsects/image3.jpg)
+
+</details>
+<!-- SOURCE-ARCHIVE:END -->

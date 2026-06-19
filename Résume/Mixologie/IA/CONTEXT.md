@@ -22,11 +22,11 @@
 **R1 — Ne jamais perdre de données**
 Aucune information présente dans les sources ne doit disparaître. Si elle ne tient pas dans la couche éditoriale, elle va dans NOTES-SOURCES.
 
-**R2 — La couche exhaustive (NOTES-SOURCES) ne se modifie pas**
-Elle fait foi en cas de désaccord. Seule la couche éditoriale (README) évolue.
+**R2 — La couche exhaustive intégrée ne se modifie pas**
+Depuis la restructuration en un fichier par projet, elle se trouve dans l’annexe repliable `Annexe — Notes sources exhaustives`, délimitée par les marqueurs `SOURCE-ARCHIVE`. Elle fait foi en cas de désaccord. Seule la partie éditoriale située avant cette annexe évolue. Une adaptation de chemin de média est autorisée lors d’un déplacement, sans modifier le contenu.
 
-**R3 — Toujours lire NOTES-SOURCES avant d'écrire dans README**
-Les données semblant absentes du README sont souvent dans les notes. Ne jamais déclarer une section "à compléter" sans avoir vérifié.
+**R3 — Toujours lire l’annexe exhaustive avant d’écrire dans la partie éditoriale**
+Les données semblant absentes de la partie éditoriale sont souvent dans l’annexe du même fichier. Ne jamais déclarer une section "à compléter" sans avoir vérifié jusqu’à la fin du document.
 
 ### Règles sur les inférences
 
@@ -50,12 +50,12 @@ Utiliser `— [Non renseigné dans les sources]` sauf instruction contraire de Y
 **R8 — Ne pas supprimer les questions ouvertes**
 Les mentions "à définir", "à équilibrer", "à arbitrer" dans les READMEs sont des signaux de conception actifs — les conserver.
 
-**R9 — Les tableaux de cartes et données structurées vont dans le README éditorial**
-Si des tableaux sont dans NOTES-SOURCES, les copier (pas paraphraser) dans le README dans une section dédiée.
+**R9 — Les tableaux de cartes et données structurées vont dans la partie éditoriale**
+Si des tableaux sont dans l’annexe exhaustive, les copier (pas paraphraser) dans la partie éditoriale, avant le marqueur `SOURCE-ARCHIVE`, dans une section dédiée.
 
-**R10 — Couche éditoriale vs couche source**
-La couche éditoriale (README) : synthèse lisible, fiche signalétique, pitch, sections claires.
-La couche source (NOTES-SOURCES) : transcription intégrale, aucune condensation.
+**R10 — Couche éditoriale vs couche source dans un fichier unique**
+La couche éditoriale, placée en premier : synthèse lisible, fiche signalétique, pitch, sections claires.
+La couche source, placée en annexe repliable : transcription intégrale, aucune condensation.
 
 ---
 
@@ -104,6 +104,25 @@ Fichiers Mixologie : 34 Markdown (33 existants + CONTEXT.md) + 16 médias.
   - Entête signalétique générique standardisée sur chaque fichier
 
 - **`_exemple.md`** créé — template pour démarrer un nouveau projet
+
+### 2026-06-19 — ChatGPT — Audit d’intégrité après restructuration
+
+**Problème détecté :** la fusion `README + NOTES-SOURCES → fichier unique` avait supprimé la couche exhaustive, contrairement aux règles R1 et R2. Les images étaient seulement listées comme chemins, sans être affichées.
+
+**Corrections appliquées :**
+
+- restauration verbatim des anciennes couches `NOTES-SOURCES` depuis le commit `7db5550` ;
+- intégration dans une annexe repliable à la fin de chacun des 12 fichiers projet ;
+- restauration analogue des notes générales dans `Documentation/References.md` ;
+- conservation de la structure demandée : toujours un seul fichier Markdown par projet ;
+- adaptation uniquement des chemins de médias à `Projets/assets/` ;
+- affichage effectif des images dans WAFE Donjon, Base et de survie et YNSECTS ;
+- ajout de marqueurs `SOURCE-ARCHIVE:BEGIN/END` pour protéger la couche exhaustive ;
+- mise à jour des règles R2, R3, R9 et R10 pour refléter l’architecture actuelle.
+- remplacement des valeurs Notion transformées `0/2`, `1/2`, `2/2` par les valeurs brutes `0`, `1`, `2` avec mention « échelle non définie » ;
+- création de `Projets/13_DONJON_A_PLUSIEURS.md` afin d’appliquer R5 et de ne plus attribuer ses métadonnées à WAFE — Donjon.
+
+**Contrôle final :** 14 annexes complètes (13 projets + références), 16 anciens documents vérifiés verbatim, marqueurs de début/fin équilibrés, 0 lien local cassé et 0 média différent de ChatGPT V2.
 
 ---
 

@@ -153,3 +153,39 @@ Certains passages longs ont été résumés au lieu d’être transcrits. La rè
 - Signification réelle de la propriété Notion 0/1/2
 
 **Total fichiers Mixologie :** 33 Markdown + 16 médias — inchangés structurellement.
+
+---
+
+# Partie ChatGPT — audit post-restructuration — 2026-06-19
+
+## Mon avis sur le travail de Claude
+
+La restructuration de Claude améliore nettement l’usage quotidien : trois dossiers compréhensibles, un fichier par projet, un modèle de nouveau projet et des fiches éditoriales cohérentes. C’est une meilleure façade que ma V2 initiale. Ses corrections sur Boxe, Village, LandProtect et YNSECTS vont également dans le bon sens : elles éliminent des inférences non sourcées et remettent des tableaux utiles dans la lecture principale.
+
+Le point faible majeur était technique et documentaire : en fusionnant puis supprimant les fichiers `NOTES-SOURCES`, la restructuration a supprimé la couche exhaustive au lieu de l’intégrer. Les fichiers résultants étaient souvent beaucoup plus courts que la somme des deux couches ; Sheepering et WAFE — Donjon perdaient notamment des détails. Les images étaient déplacées correctement mais seulement citées sous forme de chemins, donc invisibles dans le rendu Markdown.
+
+## Mon avis sur mon propre travail
+
+Ma V2 garantissait mieux l’exhaustivité, la traçabilité et les médias. Elle avait cependant une architecture trop technique : multiplier `README` et `NOTES-SOURCES` rendait la navigation plus lourde et laissait Claude faire l’essentiel du travail éditorial. J’avais raison de séparer synthèse et source, mais tort d’imposer cette séparation par fichiers plutôt que par sections clairement protégées dans un fichier unique.
+
+La solution actuelle est meilleure que nos deux propositions isolées : la partie éditoriale de Claude reste immédiatement visible, tandis que ma couche exhaustive est disponible à la fin du même document sans encombrer la lecture grâce à `<details>`.
+
+## Ce que j’ai modifié après le pull
+
+- J’ai lu `IA/CONTEXT.md` et appliqué en priorité R1 : aucune perte de données.
+- J’ai restauré les anciennes couches exhaustives depuis le commit `7db5550`, avant la restructuration.
+- Je les ai intégrées verbatim dans `Annexe — Notes sources exhaustives` pour les 12 projets et les références.
+- J’ai ajouté les marqueurs HTML `SOURCE-ARCHIVE:BEGIN` et `SOURCE-ARCHIVE:END` afin qu’une IA distingue sans ambiguïté la zone éditable de la zone de référence.
+- J’ai uniquement ajusté les chemins d’images rendus invalides par le déplacement vers `Projets/assets/`.
+- J’ai réintégré l’affichage Markdown des images pour Base et de survie, WAFE — Donjon et YNSECTS.
+- J’ai mis à jour `CONTEXT.md` : les anciennes règles parlant de fichiers `README` et `NOTES-SOURCES` décrivent désormais les deux couches du fichier projet unique.
+- J’ai remplacé les notations inventées `0/2`, `1/2`, `2/2` par les valeurs Notion brutes `0`, `1`, `2`, dont l’échelle reste inconnue.
+- J’ai extrait `Donjon à plusieurs` dans `Projets/13_DONJON_A_PLUSIEURS.md` et retiré ses métadonnées de la fiche WAFE — Donjon. Les deux restent reliés par une question d’arbitrage.
+
+## Consignes pour le prochain passage de Claude
+
+1. Modifier uniquement ce qui précède `<!-- SOURCE-ARCHIVE:BEGIN -->`.
+2. Lire l’annexe avant d’écrire qu’une donnée est absente ou à compléter.
+3. Copier vers la couche éditoriale les éléments utiles au gameplay, sans les retirer de l’annexe.
+4. Ne pas supprimer les annexes sous prétexte de duplication : cette duplication est volontaire et garantit la couverture.
+5. Si une annexe doit être déplacée, ne modifier que ses liens relatifs vers les médias.

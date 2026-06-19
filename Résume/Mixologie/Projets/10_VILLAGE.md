@@ -37,3 +37,31 @@
 - [ ] Combien de joueurs en dehors du Maire ?
 - [ ] Quels types de décisions le Maire doit-il prendre ?
 - [ ] Comment fonctionne le vote de destitution ?
+
+
+---
+
+<!-- SOURCE-ARCHIVE:BEGIN -->
+## Annexe — Notes sources exhaustives
+
+<details>
+<summary>Afficher la transcription exhaustive et les variantes historiques</summary>
+
+> Cette annexe est la couche de référence restaurée depuis Mixologie avant restructuration ($SourceCommit). Elle ne doit pas être condensée. Seuls les chemins des médias ont été adaptés à la nouvelle arborescence.
+
+> **Couche exhaustive — ChatGPT V2.** Ce document conserve les formulations, variantes, répétitions, dates, tableaux et médias issus des exports. Il fait foi lorsqu’une synthèse éditoriale simplifie ou interprète un point.
+
+# Village
+
+## Village
+
+mardi 15 juillet 2025
+
+14:00
+
+Jeu en coopération
+
+Maire qui est un joueur et qui sera gardé ou destitué en fonction de ses choix
+
+</details>
+<!-- SOURCE-ARCHIVE:END -->
