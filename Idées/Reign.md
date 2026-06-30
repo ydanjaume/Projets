@@ -1,20 +1,36 @@
 # Jeux de type "Reign"
 > Sources : Notion — fiche individuelle
 
-Jeu de cartes à prises de décision inspiré du jeu *Reign*. Aucune mécanique définie au-delà du thème.
+Jeu de cartes à prises de décision dans le style de *Reign* — chaque carte présente une situation, le joueur choisit entre deux options, chaque choix a des conséquences sur des jauges. **Le thème n'est pas encore décidé.**
 
 ---
 
 | | |
 |---|---|
-| **Thème** | Prise de décision, Gouvernance |
-| **État** | Idée |
+| **Thème** | À définir |
+| **État** | Idée — format identifié, thème ouvert |
 | **Type** | Cartes |
 | **Joueurs** | 1 à 4 |
 | **Difficulté** | Moyen |
 | **Interaction** | Coopération |
 | **Envie de dév.** | 0 [Source Notion — échelle non définie] |
 | **Inspirations** | *Reign* |
+
+---
+
+## Concept
+
+Adapter le format de *Reign* : une carte = une situation, deux choix possibles, des conséquences sur des jauges (peuple, richesse, armée, foi...). L'enchaînement des décisions crée une narration emergente.
+
+**Le thème est à choisir** — le format est adaptable à n'importe quel univers.
+
+---
+
+## Questions ouvertes
+
+- [ ] Quel thème ? (médiéval, nature, science-fiction, entreprise, village...)
+- [ ] Solo ou multi-joueurs avec des rôles différents ?
+- [ ] Les jauges sont-elles partagées ou individuelles par joueur ?
 
 ---
 
