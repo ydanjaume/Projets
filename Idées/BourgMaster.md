@@ -7,36 +7,83 @@
 
 | | |
 |---|---|
-| **Thème** | Village, Politique, Décisions |
+| **Thème** | Village, Politique, Gestion, Décisions |
 | **État** | Idée |
-| **Type** | Coopération [Source] |
-| **Joueurs** | Non défini |
-| **Difficulté** | Non définie |
-| **Interaction** | Coopération [Source] |
+| **Type** | Plateau, Gestion |
+| **Joueurs** | 2 à 5 |
+| **Difficulté** | Moyen |
+| **Interaction** | Semi-coopératif |
 | **Envie de dév.** | — [Non renseigné dans les sources] |
 | **Inspirations** | — |
 
-> *Jeu coopératif dans lequel l'un des joueurs incarne le Maire du village. Son maintien ou sa destitution dépend directement de ses choix au cours de la partie.*
-
-> **Note :** la tension interne liée au rôle du Maire pourrait évoquer un semi-coopératif, mais la source dit explicitement "jeu en coopération" — qualifier ce mode serait une inférence non confirmée.
+> *Jeu de gestion de village semi-coopératif : tous les joueurs veulent que le village prospère, mais le Maire peut être destitué et remplacé si ses décisions sont jugées mauvaises.*
 
 ---
 
 ## Concept
 
-- Jeu en **coopération**
-- Un joueur = le **Maire** — rôle à part entière
-- Le Maire est **gardé ou destitué** selon ses décisions en jeu
+Les joueurs gèrent ensemble un village en développement. L'un d'eux incarne le **Maire** — il a le pouvoir de décision sur les grandes orientations (construction, impôts, événements). Mais ce pouvoir se mérite : si ses choix déplaisent aux autres joueurs (conseillers, habitants), il peut être **mis en cause et destitué**. Un autre joueur prend alors le rôle de Maire.
 
-*(Aucune autre mécanique définie dans les notes)*
+L'objectif reste commun — faire prospérer le village — mais la tension vient du fait que **chacun peut aspirer à devenir Maire**, et que le Maire actuel doit convaincre les autres de la valeur de ses choix.
+
+---
+
+## Mécaniques principales
+
+### Le Maire
+- Prend les **décisions structurantes** chaque tour : quoi construire, où allouer les ressources, comment répondre aux événements
+- Dispose d'un **capital de confiance** (jauge visible de tous)
+- Si la confiance tombe à zéro → **vote de destitution** déclenché
+
+### Les autres joueurs — Conseillers
+- Chacun a un **rôle spécialisé** dans le village (marchand, architecte, capitaine de la garde, fermier...)
+- Ils exécutent les décisions du Maire dans leur domaine
+- Ils peuvent **voter la défiance** si une décision leur semble mauvaise
+- Ils ont un **objectif personnel** en plus de l'objectif collectif (ex : le marchand veut que les échanges commerciaux soient prioritaires)
+
+### La destitution
+- Déclenchée par un vote majoritaire des Conseillers
+- Le joueur destitué **redevient Conseiller**
+- Le joueur qui a le plus de légitimité (score de réputation ?) devient le nouveau Maire
+- Le nouveau Maire hérite des décisions déjà engagées — et de leurs conséquences
+
+### Le village
+- Plateau modulaire qui évolue au fil des tours (bâtiments construits, ressources gérées)
+- Des **événements** surviennent chaque tour : calamités, opportunités commerciales, migrants, conflits...
+- Chaque événement force le Maire à prendre une décision avec des conséquences visibles
+
+---
+
+## Événements (exemples)
+
+| Événement | Décision du Maire | Conséquences possibles |
+|---|---|---|
+| Sécheresse | Rationner l'eau ou payer pour creuser un puits | Mécontentement vs dépense de ressources |
+| Marchands étrangers | Ouvrir les portes ou les taxer | Commerce vs sécurité |
+| Épidémie | Quarantaine ou traitement coûteux | Blocage de production vs coût élevé |
+| Réfugiés | Accueillir ou refuser | Population + main d'œuvre vs ressources |
+| Bandit | Lever une milice ou payer une rançon | Sécurité durable vs coût immédiat |
 
 ---
 
 ## Questions ouvertes
 
-- [ ] Combien de joueurs en dehors du Maire ?
-- [ ] Quels types de décisions le Maire doit-il prendre ?
-- [ ] Comment fonctionne le vote de destitution ?
+- [ ] Comment mesure-t-on la "bonne" décision ? Score objectif ou perception subjective des Conseillers ?
+- [ ] Le Maire rejoue-t-il dès la destitution ou attend-il un tour ?
+- [ ] Les objectifs personnels des Conseillers sont-ils secrets ou visibles ?
+- [ ] Y a-t-il une condition de victoire individuelle (devenir Maire le plus longtemps) en plus de la victoire collective ?
+- [ ] Combien de joueurs idéalement — 3, 4, 5 ?
+
+---
+
+## Références & inspirations
+
+| Référence | Ce qui pourrait être emprunté |
+|---|---|
+| *Pandemic* | Gestion coopérative de crises, rôles asymétriques |
+| *Dead of Winter* | Semi-coop, objectifs secrets individuels |
+| *Viticulture* | Gestion de ressources sur plateau évolutif |
+| *Coup* | Déstabilisation politique, bluff, prise de pouvoir |
 
 
 ---
