@@ -1,6 +1,6 @@
 # WAFE — Donjon
 > Source : OneNote `WAFE - Donjon.docx` (nov. 2020 → juil. 2023)
-> Fait partie de la famille WAFE — voir [02_WAFE_UNIVERS.md](02_WAFE_UNIVERS.md)
+> Fait partie de la famille WAFE — voir [WafeUnivers.md](WafeUnivers.md)
 > Le concept Notion "Donjon à plusieurs" a été intégré à ce fichier (voir § Mécanique de positionnement).
 
 ---

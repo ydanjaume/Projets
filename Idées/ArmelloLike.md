@@ -1,6 +1,6 @@
-# WAFE — King Battle
+# ArmelloLike
 > Sources : OneNote `WAFE - King battle.docx` — 19 novembre 2020
-> Fait partie de la famille WAFE — voir [02_WAFE_UNIVERS.md](02_WAFE_UNIVERS.md)
+> Fait partie de la famille WAFE — voir [WafeUnivers.md](WafeUnivers.md)
 
 ---
 

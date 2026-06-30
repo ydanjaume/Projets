@@ -1,4 +1,4 @@
-# Village
+# BourgMaster
 > Sources : OneNote `Village.docx` — 15 juillet 2025
 
 ---

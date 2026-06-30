@@ -1,5 +1,6 @@
-# Base et de survie
-> Sources : OneNote `Général.docx` + Notion `Base et de survie.md`
+# LandProtect
+> Sources : OneNote `WAFE - LandProtect.docx` (19 nov. 2020) + OneNote `Général.docx` + Notion `Base et de survie.md`
+> Origine WAFE — voir [WafeUnivers.md](WafeUnivers.md) · Projet devenu indépendant de l'univers WAFE
 
 ---
 
@@ -7,16 +8,16 @@
 
 | | |
 |---|---|
-| **Thème** | Animaux, Survie, Construction, Exploration |
+| **Thème** | Éléments, Animaux, Survie, Construction, Exploration |
 | **État** | En cours |
 | **Type** | Plateau hexagonal — stratégie coopérative |
 | **Joueurs** | 2 à 4 |
 | **Difficulté** | Moyen |
 | **Interaction** | Coopération |
-| **Envie de dév.** | 2 [Source Notion — échelle non définie] |
+| **Envie de dév.** | 2 |
 | **Inspirations** | ARMELLO, Mice and Mystics, Voice of Cards |
 
-> *Jeu d'exploration coopératif sur plateau hexagonal à révélation progressive. Chaque joueur incarne un héros animal aux mécaniques radicalement différentes. Les tuiles révélées peuvent être des ressources, un marché, un village ou un monstre.*
+> *Jeu d'exploration coopératif sur plateau hexagonal à révélation progressive. Chaque joueur incarne un héros animal aux mécaniques radicalement différentes. Les tuiles révélées peuvent être des ressources, un marché, un village ou un monstre. Le système élémentaire (Terre / Air / Eau / Feu) structure à la fois les sorts et les ressources.*
 
 ---
 
@@ -32,6 +33,17 @@
 
 ---
 
+## Rôle des éléments
+
+| Élément | Besoin vital (origine) | Sort |
+|---------|----------------------|------|
+| **Terre** | Construire | Protection de la terre — protège de 2 pts de dégâts |
+| **Air** | Transport | Coup de vent — ajoute 2 déplacements |
+| **Eau** | Boire | Eau soignante — rend 2 PV à soi-même ou un allié |
+| **Feu** | Réchauffer | Flammèche — inflige 2 pts de dégâts |
+
+---
+
 ## Personnages
 
 ### Races et héros
@@ -44,15 +56,6 @@
 | Terrestre | Martin le Lapin | — |
 
 *(Fiche personnage illustrée présente dans les sources Notion — voir images)*
-
-### Sorts élémentaires
-
-| Élément | Sort | Effet |
-|---------|------|-------|
-| Eau | Eau soignante | Rend 2 PV à soi-même ou un allié |
-| Terre | Protection de la terre | Protège de 2 pts de dégâts |
-| Feu | Flammèche | Inflige 2 pts de dégâts |
-| Air | Coup de vent | Ajoute 2 déplacements |
 
 ---
 
@@ -142,18 +145,42 @@ Tuiles de forme **hexagonale**.
 
 ![Exemple de plateau](assets/base-et-survie/image%202.png)
 
-
 ---
 
 <!-- SOURCE-ARCHIVE:BEGIN -->
 ## Annexe — Notes sources exhaustives
 
 <details>
-<summary>Afficher la transcription exhaustive et les variantes historiques</summary>
+<summary>Afficher la transcription exhaustive — WAFE LandProtect (nov. 2020)</summary>
 
 > Cette annexe est la couche de référence restaurée depuis Mixologie avant restructuration (7db5550). Elle ne doit pas être condensée. Seuls les chemins des médias ont été adaptés à la nouvelle arborescence.
 
-> **Couche exhaustive — ChatGPT V2.** Ce document conserve les formulations, variantes, répétitions, dates, tableaux et médias issus des exports. Il fait foi lorsqu’une synthèse éditoriale simplifie ou interprète un point.
+> **Couche exhaustive — WAFE — LandProtect.** Ce document conserve les formulations, variantes, répétitions, dates, tableaux et médias issus des exports. Il fait foi lorsqu'une synthèse éditoriale simplifie ou interprète un point.
+
+# WAFE — LandProtect
+
+## Général
+
+jeudi 19 novembre 2020
+
+14:57
+
+Terre : Construire
+
+Air : Transport
+
+Eau: boire
+
+Feu : Réchauffer
+
+</details>
+
+<details>
+<summary>Afficher la transcription exhaustive — Base et de survie (ChatGPT V2)</summary>
+
+> Cette annexe est la couche de référence restaurée depuis Mixologie avant restructuration (7db5550). Elle ne doit pas être condensée. Seuls les chemins des médias ont été adaptés à la nouvelle arborescence.
+
+> **Couche exhaustive — ChatGPT V2.** Ce document conserve les formulations, variantes, répétitions, dates, tableaux et médias issus des exports. Il fait foi lorsqu'une synthèse éditoriale simplifie ou interprète un point.
 
 # Base et de survie
 
@@ -172,7 +199,7 @@ Tuiles de forme **hexagonale**.
 
 Construction
 
-Exploration avec pose d’hexagone
+Exploration avec pose d'hexagone
 
 Hexagone = ressources, marché, village, monstre
 
@@ -245,7 +272,7 @@ Les tuiles seraient de formes hexagonales.
 
 - Plaine : Tuile de base
 - Montagne : Nécessite 2 déplacements
-- Rivière : Termine les déplacements d’un personnage
+- Rivière : Termine les déplacements d'un personnage
 - Marais : Inflige des dégats
 - Forêt :
 - Sable :

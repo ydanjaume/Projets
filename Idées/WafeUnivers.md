@@ -1,7 +1,7 @@
 # WAFE — Univers & RPG principal
 > Sources : OneNote `WAFE.docx` + `WAFE - Banalités.docx` — novembre 2020 à décembre 2021
 
-**Famille WAFE :** [Univers](02_WAFE_UNIVERS.md) · [King Battle](03_WAFE_KING_BATTLE.md) · [LandProtect](04_WAFE_LANDPROTECT.md) · [Donjon](05_WAFE_DONJON.md)
+**Famille WAFE :** [Univers](WafeUnivers.md) · [ArmelloLike](ArmelloLike.md) · [LandProtect](LandProtect.md) · [DonjonTogether](DonjonTogether.md)
 
 ---
 
