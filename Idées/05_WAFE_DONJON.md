@@ -1,7 +1,7 @@
 # WAFE — Donjon
 > Source : OneNote `WAFE - Donjon.docx` (nov. 2020 → juil. 2023)
 > Fait partie de la famille WAFE — voir [02_WAFE_UNIVERS.md](02_WAFE_UNIVERS.md)
-> Voir aussi : [13_DONJON_A_PLUSIEURS.md](13_DONJON_A_PLUSIEURS.md) — concept Notion distinct, maintenu séparé jusqu'à arbitrage de Yann.
+> Le concept Notion "Donjon à plusieurs" a été intégré à ce fichier (voir § Mécanique de positionnement).
 
 ---
 
@@ -12,7 +12,7 @@
 | **Thème** | Donjon, Combats, Aventure coopérative |
 | **État** | Deux versions documentées (V1 et V2) — maturité non définie dans la source |
 | **Type** | Cartes + Dés [Source OneNote] |
-| **Joueurs** | Non défini dans la source WAFE |
+| **Joueurs** | 2 à 6 [Source Notion] |
 | **Difficulté** | Non définie dans la source WAFE |
 | **Interaction** | Coopération [Inférence : présence d’un groupe de personnages — non confirmé] |
 | **Envie de dév.** | — [Non renseigné dans la source WAFE] |
@@ -60,6 +60,15 @@ La carte personnage se **tourne et se retourne** pour indiquer les ressources :
 | Quart de tour | Diminue PV (humain) / Esprit (animal) / Mana (élément) |
 | Retournée | Inapte à attaquer |
 | Réinitialisation | À chaque combat ? À chaque donjon ? *(à définir)* |
+
+### Mécanique de positionnement *(Source Notion — Donjon à plusieurs)*
+
+Inspiré de **Voice of Cards**. Joueurs : 2 à 6.
+
+- Les cartes de personnage sont **collées** les unes aux autres pour interagir.
+- Les attaques possibles dépendent de la **position relative** des cartes.
+
+> Questions ouvertes : que signifie précisément « cartes collées » (adjacence orthogonale, contact quelconque, formation imposée) ? Comment la position détermine-t-elle la portée et les cibles ?
 
 ---
 
@@ -332,12 +341,6 @@ Niveau · Santé · Armure · Déplacement · Attaque · (Portée)
 ### Idées de pouvoirs divins
 
 Charme · Gravité · Changement de masse · Changement de taille · Boost d'une caractéristique aléatoire · Voler les pouvoirs · Enragement · Contrôle du temps · Augmenter une caract. au maximum (dégâts / vie / rapidité / armure) · Prévoyance · Passer à travers les éléments · Télékinésie / Télépathie · Oubli / Blocage des compétences
-
----
-
-## Projet voisin à arbitrer
-
-La fiche Notion [Donjon à plusieurs](13_DONJON_A_PLUSIEURS.md) est maintenue comme projet distinct tant que Yann n’a pas confirmé son appartenance à WAFE.
 
 ---
 
