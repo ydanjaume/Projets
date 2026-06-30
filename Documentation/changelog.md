@@ -23,3 +23,7 @@ Historique des modifications du dépôt. Format : date ISO · heure Europe/Paris
 | 2026-06-30 | ~17h00 | Yann Danjaume | Corrections audit : titres H1 alignés sur noms de fichiers (ArmelloLike, BourgMaster) + suppression ligne 07 obsolète du sommaire |
 | 2026-06-30 | ~17h00 | Yann Danjaume | AbeilleManagement.md — ajout concept complet : castes/postes, 4 styles de management (rouge/jaune/vert/bleu), mécaniques, questions ouvertes |
 | 2026-06-30 | ~17h00 | Yann Danjaume | SENS.md — ajout concept complet : accessoires physiques, 5 rôles asymétriques, structure de partie, exemples de défis, questions ouvertes |
+| 2026-06-30 | ~18h00 | Yann Danjaume / Claude | Foret.md — premier jet concept : chaîne alimentaire, propagation, symbioses, événements naturels/humains, 4 rôles joueurs, inspirations (Wingspan, Ark Nova, Spirit Island) |
+| 2026-06-30 | ~18h00 | Yann Danjaume / Claude | BourgMaster.md — premier jet concept : semi-coop assumé, mécanique Maire/destitution, rôles Conseillers, objectifs personnels, événements village, inspirations (Dead of Winter, Coup, Pandemic) |
+| 2026-06-30 | ~18h00 | Yann Danjaume / Claude | Reign.md — clarification : format Reign identifié, thème explicitement non défini, questions ouvertes posées |
+| 2026-06-30 | ~18h00 | Yann Danjaume / Claude | SportVolley.md — premier jet concept : structure rally en séquence, 6 postes asymétriques, cartes tactiques, mécanique momentum, inspirations (Haikyuu, Blood Bowl) |
