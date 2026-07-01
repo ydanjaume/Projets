@@ -8,9 +8,7 @@
 
 ### Règles
 - [ ] Écrire un exemple complet de tour (à intégrer dans la prochaine version)
-- [ ] Vérifier si 2 chemins forestiers suffisent pour stabiliser les apparitions de loups
-- [ ] Vérifier si le col de montagne ne crée pas un goulot trop bloquant pour les moutons
-- [ ] Trancher : les terrains latéraux des chemins spéciaux sont-ils déduits de la réserve globale ?
+- [ ] Valider les effets des 3 chemins spéciaux à la table (forêt, rivière, col)
 
 ### Assets
 - [ ] Tuiles terrain (prairie, forêt, rivière, montagne, trou) + 4 types de chemin
@@ -28,10 +26,11 @@
 ## Questions ouvertes
 
 - [ ] 3 déplacements chiens : satisfaisant à la table ? (simulation = équivalent à 4, mais l'IA joue parfaitement — l'humain ressentira la différence)
-- [ ] 2 chemins forestiers en v1.2 : garantissent-ils des loups sans saturer la partie ?
-- [ ] Col de montagne : trop bloquant pour les moutons ou tension bien dosée ?
-- [ ] Terrains latéraux des chemins spéciaux : dans la réserve ou en supplément ?
-- [ ] Niveaux de difficulté : quels paramètres (forêts, fréquence loups, loups max, vitesse loups) ?
+- [ ] Chemin forêt : 2 occurrences suffisent-elles pour garantir des apparitions de loups sans saturer ?
+- [ ] Chemin rivière à 2 déplacements : pénalité bien dosée ou trop punitive ?
+- [ ] Col de montagne à 2 moutons max : tension satisfaisante ou trop bloquant ?
+- [ ] Éboulis : les moutons trouvent-ils naturellement un détour par le terrain adjacent ou est-ce frustrant ?
+- [ ] Niveaux de difficulté : quels paramètres (nombre de chemins spéciaux, fréquence loups, loups max) ?
 - [ ] Durée de partie cible : non définie
 
 ---
@@ -72,20 +71,13 @@ Les moutons sont **numérotés** (numéros uniques, jamais d'égalité).
 
 | Type de chemin | Quantité | Effet |
 |---|---|---|
-| Chemin de prairie | 8 | Chemin normal, sans effet |
-| Chemin forestier | 2 | Compte comme une forêt révélée pour les événements loups |
-| Pont / Gué | 1 | Franchissable, traverse une rivière |
-| Col de montagne | 1 | Franchissable, passe entre des montagnes |
+| Chemin de prairie | 7 | Chemin normal, sans effet |
+| Chemin forêt | 2 | Compte comme une forêt pour les événements loups — point d'apparition |
+| Chemin rivière | 1 | Coûte 2 déplacements pour être traversé (au lieu de 1) |
+| Col de montagne | 1 | Capacité 2 moutons maximum (au lieu de 3) |
+| Éboulis | 1 | Infranchissable pour les moutons — chiens, loups et berger passent normalement |
 
-Quand une tuile chemin spéciale est posée, placer immédiatement les terrains associés sur les deux côtés du chemin, si les emplacements sont libres :
-
-| Chemin spécial | Terrains à placer autour |
-|---|---|
-| Chemin forestier | 1 forêt de chaque côté |
-| Pont / Gué | 1 rivière de chaque côté |
-| Col de montagne | 1 montagne de chaque côté |
-
-Si un emplacement est déjà occupé, placer le terrain sur la première case libre adjacente au chemin spécial. Un chemin spécial reste toujours franchissable par toutes les entités.
+Les chemins spéciaux n'ont aucune règle de pose particulière — leurs effets s'appliquent directement sur la case, sans terrain à placer autour.
 
 **Le terrain** : toute case occupée doit être entourée de tuiles révélées. Dès qu'une entité entre sur une case dont une case adjacente est vide, révéler immédiatement une tuile terrain.
 
@@ -268,10 +260,20 @@ Statistiquement équivalent à 4 (delta max ±3 points selon les configs, dans l
 - Grand Sprint du Border Collie (+2) devient décisif au lieu d'être anecdotique
 - Plus de tension, chaque déplacement compte
 
-### Pourquoi les chemins thématiques (v1.2)
+### Évolution des chemins thématiques (v1.2 → v1.3)
 
-Problème identifié : avec un chemin entièrement neutre, certaines parties manquent de forêts près de la route, rendant le jeu trop linéaire. Les loups n'ont pas de points d'apparition pertinents.
+**v1.2** : les tuiles chemin spéciales plaçaient des terrains latéraux à la pose (forêts, rivière, montagnes autour du chemin). Problème : règle de pose complexe, question de réserve non résolue, setup lourd.
 
-Solution retenue : 4 types de tuile chemin dont 3 spéciaux qui placent des terrains autour d'eux à la pose. Garantit la présence de forêts, rivière et montagne dans toutes les parties.
+**v1.3** : les effets sont portés directement par les tuiles chemin, sans placement latéral.
 
-À valider lors du premier playtest : 2 chemins forestiers suffisent-ils ? Le col ne bloque-t-il pas trop les moutons ?
+| Chemin | Effet |
+|---|---|
+| Forêt | Point d'apparition loups (même règle que les forêts terrain) |
+| Rivière | Traverser la case coûte 2 déplacements au lieu de 1 |
+| Col de montagne | Capacité 2 moutons max sur la case (au lieu de 3) |
+
+Avantages : setup simplifié, zéro tuile latérale à poser, pas de question de réserve, effets lisibles immédiatement sur le plateau.
+
+À valider lors du premier playtest : pénalité rivière bien dosée ? Col trop bloquant ou tension satisfaisante ? Fréquence des chemins forêt correcte ? Éboulis — les moutons trouvent-ils naturellement un détour ou est-ce frustrant ?
+
+Note : l'éboulis est cohérent avec le terrain Trou/Ravin existant (même règle : infranchissable pour les moutons, franchissable pour chiens et loups). La différence est qu'il est garanti sur le chemin — le détour est inévitable.
