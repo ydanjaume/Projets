@@ -195,12 +195,12 @@ Niveaux d'apparition des loups :
 
 | Carte | Besoin | Effet |
 |---|---|---|
-| Odeur de proie | Chasse | 🟠 Loups proches. Cible : mouton le plus proche du berger. |
-| Proie isolée | Survie | 🟡 1 loup. Cible : mouton le plus éloigné du berger. |
-| Territoire de chasse | Territoire | 🔴 Loups partout. |
-| Hurlement de la meute | Appartenance | Tous les loups gagnent +1 déplacement. |
-| Faim de la meute | Faim | Les loups mangent puis se déplacent s'ils sont adjacents à un mouton. |
-| Chasse nocturne | Rythme | 🟡 1 loup. Les chiens ne peuvent pas aboyer ce tour. |
+| Odeur de proie | Chasse | Les loups effectuent immédiatement 1 déplacement supplémentaire vers leur cible, avant la phase loups normale. |
+| Proie isolée | Survie | Ce tour, tous les loups ciblent le mouton le plus éloigné du berger au lieu du plus proche. |
+| Territoire de chasse | Territoire | 🔴 1 loup dans toutes les forêts révélées. Les moutons adjacents à un loup fuient d'1 case supplémentaire ce tour. |
+| Hurlement de la meute | Appartenance | Chaque loup adjacent à un autre loup se déplace immédiatement d'1 case pour s'éloigner de ses voisins loups. |
+| Faim de la meute | Faim | Tout mouton mangé ce tour fait apparaître 1 loup supplémentaire dans la forêt la plus proche. |
+| Chasse nocturne | Rythme | 🟡 1 loup. Aboyer et Grand Aboiement sont sans effet ce tour. |
 
 #### Vices du troupeau
 
@@ -235,7 +235,7 @@ Niveaux d'apparition des loups :
 
 | Carte | Élément | Effet |
 |---|---|---|
-| Vent du nord | Air | Toutes les entités gagnent +1 déplacement pour chaque case vers le nord. |
+| Vent du nord | Air | Toutes les entités gagnent +1 déplacement pour chaque case vers la prairie. |
 | Brume épaisse | Brume | Les moutons ignorent le berger. |
 | Pluie battante | Eau | Toutes les entités ont vitesse 1. |
 | Gel | Glace | Déplacements doublés et obligatoires dans la direction du premier déplacement du tour. |
