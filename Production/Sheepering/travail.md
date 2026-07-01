@@ -29,9 +29,9 @@
 
 - [ ] 3 déplacements chiens : satisfaisant à la table ? (simulation = équivalent à 4, mais l'IA joue parfaitement — l'humain ressentira la différence)
 - [ ] Chemin forêt : 2 occurrences suffisent-elles pour garantir des apparitions de loups sans saturer ?
-- [ ] Chemin rivière à 2 déplacements : pénalité bien dosée ou trop punitive ?
+- [ ] Chemin rivière (stoppe sur la case) : trop punitif sur le chemin principal ?
 - [ ] Col de montagne à 2 moutons max : tension satisfaisante ou trop bloquant ?
-- [ ] Éboulis : les moutons trouvent-ils naturellement un détour par le terrain adjacent ou est-ce frustrant ?
+- [ ] Ravin (chemin) : les moutons trouvent-ils naturellement un détour par le terrain adjacent ou est-ce frustrant ?
 - [ ] Niveaux de difficulté : quels paramètres (nombre de chemins spéciaux, fréquence loups, loups max) ?
 - [ ] Durée de partie cible : non définie
 
@@ -79,9 +79,9 @@ Les moutons sont **numérotés** (numéros uniques, jamais d'égalité).
 |---|---|---|
 | Chemin de prairie | 7 | Chemin normal, sans effet |
 | Chemin forêt | 2 | Compte comme une forêt pour les événements loups — point d'apparition |
-| Chemin rivière | 1 | Coûte 2 déplacements pour être traversé (au lieu de 1) |
+| Chemin rivière | 1 | Stoppe le déplacement sur la case (même effet que la rivière terrain) |
 | Col de montagne | 1 | Capacité 2 moutons maximum (au lieu de 3) |
-| Éboulis | 1 | Infranchissable pour les moutons — chiens, loups et berger passent normalement |
+| Ravin | 1 | Infranchissable pour les moutons — chiens, loups et berger passent normalement |
 
 Les chemins spéciaux n'ont aucune règle de pose particulière — leurs effets s'appliquent directement sur la case, sans terrain à placer autour.
 
@@ -95,7 +95,7 @@ Les chemins spéciaux n'ont aucune règle de pose particulière — leurs effets
 | Forêt | 5 | Tous | Génère des loups (événements) |
 | Rivière | 5 | Tous | Stoppe le déplacement sur la case |
 | Montagne | 3 | Personne | Infranchissable |
-| Trou / Ravin | 2 | Chiens et loups | Infranchissable pour les moutons |
+| Ravin | 2 | Chiens et loups | Infranchissable pour les moutons |
 
 #### Placement initial
 
@@ -275,11 +275,10 @@ Statistiquement équivalent à 4 (delta max ±3 points selon les configs, dans l
 | Chemin | Effet |
 |---|---|
 | Forêt | Point d'apparition loups (même règle que les forêts terrain) |
-| Rivière | Traverser la case coûte 2 déplacements au lieu de 1 |
+| Rivière | Stoppe le déplacement sur la case (même règle que la rivière terrain) |
 | Col de montagne | Capacité 2 moutons max sur la case (au lieu de 3) |
+| Ravin | Infranchissable pour les moutons (même règle que le ravin terrain) |
 
-Avantages : setup simplifié, zéro tuile latérale à poser, pas de question de réserve, effets lisibles immédiatement sur le plateau.
+Règle unifiée : chemin et terrain partagent toujours le même effet pour un type donné. Pas de règle spéciale à mémoriser selon qu'on est sur le chemin ou hors chemin.
 
-À valider lors du premier playtest : pénalité rivière bien dosée ? Col trop bloquant ou tension satisfaisante ? Fréquence des chemins forêt correcte ? Éboulis — les moutons trouvent-ils naturellement un détour ou est-ce frustrant ?
-
-Note : l'éboulis est cohérent avec le terrain Trou/Ravin existant (même règle : infranchissable pour les moutons, franchissable pour chiens et loups). La différence est qu'il est garanti sur le chemin — le détour est inévitable.
+À valider lors du premier playtest : rivière sur le chemin trop punitive ? Col trop bloquant ? Ravin — détour naturel ou frustrant ?
