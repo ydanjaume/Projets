@@ -218,16 +218,16 @@ Niveaux d'apparition des loups :
 
 #### Humeurs du berger
 
-*Référence : Les 4 humeurs (Hippocrate)*
+*Référence : Les 6 émotions de base (Ekman)*
 
-| Carte | Humeur | Effet |
+| Carte | Émotion | Effet |
 |---|---|---|
-| Amour du troupeau | Sanguin | Tous les moutons rejoignent le berger. |
-| Accélération incertaine | Sanguin | Le berger avance de 2 cases. |
-| Travail mal fait | Colérique | Les chiens dépensent tous leurs déplacements vers le berger. |
-| Difficulté du métier | Colérique | Les moutons adjacents au berger fuient d'une case. |
-| Mal du pays | Mélancolique | Le berger recule d'une case. |
-| Arrêt brutal | Flegmatique | Le berger ne bouge pas. |
+| Amour du troupeau | Joie | Tous les moutons rejoignent le berger. |
+| Mal du pays | Tristesse | Le berger recule d'une case. |
+| Difficulté du métier | Dégoût | Les moutons adjacents au berger fuient d'une case. |
+| Arrêt brutal | Peur | Le berger ne bouge pas. |
+| Travail mal fait | Colère | Les chiens dépensent tous leurs déplacements vers le berger. |
+| Accélération incertaine | Surprise | Le berger avance de 2 cases. |
 
 #### Éléments naturels
 
