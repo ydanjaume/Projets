@@ -188,19 +188,19 @@ Tiebreak de chemin : même priorité que les moutons (nord > …).
 
 #### Instincts sauvages
 
-*Référence : Comportements de prédation*
+*Référence : Besoins primaires du prédateur*
 
 Niveaux d'apparition des loups :
 🟡 Faible = 1 loup dans 1 forêt aléatoire | 🟠 Modéré = 1 loup par forêt à ≤4 cases du troupeau | 🔴 Fort = 1 loup dans toutes les forêts révélées
 
-| Carte | Intensité | Effet |
+| Carte | Besoin | Effet |
 |---|---|---|
-| Odeur de proie | 🟠 Modéré | Loups proches. Cible : mouton le plus proche du berger. |
-| Proie isolée | 🟡 Faible | 1 loup. Cible : mouton le plus éloigné du berger. |
-| Territoire de chasse | 🔴 Fort | Loups partout. |
-| Hurlement de la meute | — | Tous les loups gagnent +1 déplacement. |
-| Faim de la meute | — | Les loups mangent puis se déplacent s'ils sont adjacents à un mouton. |
-| Chasse nocturne | 🟡 Faible | 1 loup. Les chiens ne peuvent pas aboyer ce tour. |
+| Odeur de proie | Chasse | 🟠 Loups proches. Cible : mouton le plus proche du berger. |
+| Proie isolée | Survie | 🟡 1 loup. Cible : mouton le plus éloigné du berger. |
+| Territoire de chasse | Territoire | 🔴 Loups partout. |
+| Hurlement de la meute | Appartenance | Tous les loups gagnent +1 déplacement. |
+| Faim de la meute | Faim | Les loups mangent puis se déplacent s'ils sont adjacents à un mouton. |
+| Chasse nocturne | Rythme | 🟡 1 loup. Les chiens ne peuvent pas aboyer ce tour. |
 
 #### Vices du troupeau
 
