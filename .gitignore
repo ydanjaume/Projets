@@ -1,0 +1,14 @@
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.obsidian/
+.vscode/
+*.tmp
+*~
+
+# Scripts Python
+__pycache__/
+*.py[cod]

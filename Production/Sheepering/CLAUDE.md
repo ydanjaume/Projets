@@ -16,25 +16,27 @@ Version courante : **v1.2**.
 - Chaque chien a 1 action spéciale, utilisable une seule fois par partie.
 - Fin de partie : 3 tours de rapatriement après que le berger atteint le pâturage final.
 
-### Questions ouvertes
-
-- Écrire un exemple complet de tour dans les règles.
-- Valider physiquement le ressenti des chiens à 3 déplacements.
-- Définir des niveaux de difficulté (nombre de forêts, fréquence des événements loups).
-
 ## Fichiers
 
 | Fichier | Rôle |
 |---|---|
-| `regles/v1.2.md` | Règles en vigueur |
+| `travail.md` | Brouillon actif — règles en cours + tâches + questions + notes de design |
+| `ficheprojet.md` | Référence stable — concept, config, simulations, décisions figées |
+| `CLAUDE.md` | Ce fichier — guide IA et protocole de contribution |
+| `regles/v1.2.md` | Snapshot stable des règles actuelles |
 | `regles/v1.1.md` | Version précédente archivée |
-| `journal.md` | Historique de toutes les décisions de design |
-| `assets/` | PNG des tuiles, chiens, événements, pions + SVG templates |
-| `assets/generate.py` | Script de génération des PNG depuis les SVG |
+| `playtests/` | Comptes-rendus des parties physiques |
+| `assets/` | Tuiles, pions, cartes (à créer) |
 
 ## Règles de contribution
 
-Avant toute modification : lire ce fichier, puis `journal.md`.
+Avant toute modification : lire `travail.md`.
+
+Si une règle change :
+1. Modifier directement dans `travail.md`
+2. Quand la version se stabilise → créer `regles/v1.3.md` depuis `travail.md`
+3. Documenter le changement dans les notes de design de `travail.md`
+4. `regles/v1.2.md` devient archivée — ne plus la modifier
 
 Si une règle change :
 1. Créer `regles/v1.3.md` (copie de `v1.2.md` comme base)
