@@ -7,8 +7,10 @@
 ## Prochaines étapes
 
 ### Règles
-- [ ] Écrire un exemple complet de tour (à intégrer dans la prochaine version)
-- [ ] Valider les effets des 3 chemins spéciaux à la table (forêt, rivière, col)
+- [ ] Écrire un exemple complet de tour (format à définir)
+- [ ] Définir la disposition fixe des tuiles chemin pour la partie initiation
+- [ ] Écrire la section "Partie initiation" (disposition fixe + règles simplifiées si nécessaire)
+- [ ] Valider les effets des chemins spéciaux à la table (forêt, rivière, col, éboulis)
 
 ### Assets
 - [ ] Tuiles terrain (prairie, forêt, rivière, montagne, trou) + 4 types de chemin
@@ -38,6 +40,10 @@
 ## Règles — version de travail (base v1.2)
 
 *Modifier ici librement. Cette version deviendra `regles/v1.3.md` quand elle sera stable.*
+
+> **Niveaux de jeu prévus :**
+> - **Initiation** : disposition fixe des tuiles chemin (à définir), règles simplifiées si besoin
+> - **Standard** : disposition aléatoire des tuiles chemin
 
 ---
 
