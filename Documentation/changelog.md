@@ -33,6 +33,7 @@ Historique des modifications du dépôt. Format : date ISO · heure Europe/Paris
 | 2026-07-01 | — | Claude (claude-sonnet-4-6) | Fusion changelog.md racine → Documentation/changelog.md (historique fondateur préservé ci-dessous) puis suppression du doublon racine |
 | 2026-07-01 | — | Claude (claude-sonnet-4-6) | Production/Sheepering — création ficheprojet.md, playtests/_template.md, assets/.gitkeep ; mise à jour CLAUDE.md Sheepering + CLAUDE.md racine |
 | 2026-07-01 | — | Claude (claude-sonnet-4-6) | Production/Sheepering — création travail.md (règles v1.2 + tâches + questions + notes de design) ; ficheprojet.md restreint aux éléments stables ; journal.md supprimé (contenu migré) ; CLAUDE.md mis à jour |
+| 2026-07-01 | — | Yann Danjaume / Claude | Production/Sheepering — règles v1.3 : chemins thématiques autonomes, terrain 60 tuiles (40/5/5/5/5), Sprint +2, Aboyer sans pousse moutons, Appeler → Conduire, Border Collie Grand Sprint redesigné ; snapshot regles/v1.3.md créé |
 
 ---
 
